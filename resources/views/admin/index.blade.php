@@ -1,6 +1,13 @@
 @extends('layouts.admin')
+@section('cabecalho')
+    <div class="panel-header panel-header-lg">
+        <canvas id="bigDashboardChart"></canvas>
+    </div>
+@stop
 
 @section('conteudo_principal')
+
+
     <div class="row">
         <div class="col-lg-4">
             <div class="card card-chart">
@@ -31,6 +38,7 @@
                 </div>
             </div>
         </div>
+
         <div class="col-lg-4 col-md-6">
             <div class="card card-chart">
                 <div class="card-header">

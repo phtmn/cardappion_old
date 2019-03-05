@@ -11,9 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('site.index');
-})->name('site');
+Route::get('/','Site\SiteController@home')->name('site');
+Route::get('/promocao/code/{id}', 'Site\SiteController@promocao');
 
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::group(['prefix'=>'admin','namespace'=>'Admin','middleware'=>'auth'],function(){
+
+    Route::get('/','DashboardController@index')->name('dashboard.index');
+    Route::resource('promocao','PromocaoController');
+    Route::get('qrcode/{id}', 'PromocaoController@qrCode')->name('promocao.qrCode');
+});

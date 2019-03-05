@@ -27,10 +27,10 @@
           Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
       -->
         <div class="logo">
-            <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+            <a href="{{route('dashboard.index')}}" class="simple-text logo-mini">
                 CPION
             </a>
-            <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+            <a href="{{route('dashboard.index')}}" class="simple-text logo-normal">
                 CardapiON
             </a>
         </div>
@@ -42,9 +42,9 @@
         <!-- Navbar -->
         @include('layouts.partes.navbar')
         <!-- End Navbar -->
-        <div class="panel-header panel-header-lg">
-            <canvas id="bigDashboardChart"></canvas>
-        </div>
+
+        @yield('cabecalho')
+
         <div class="content">
             @yield('conteudo_principal')
         </div>
