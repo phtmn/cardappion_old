@@ -35,6 +35,7 @@ class CreateLojasTable extends Migration
             $table->string('facebook')->nullable();
             $table->string('instagram')->nullable();
             $table->string('whastapp')->nullable();
+            $table->text('mapa')->nullable();
             $table->string('site')->nullable();
             $table->text('logo')->nullable();
             $table->text('foto_capa')->nullable();

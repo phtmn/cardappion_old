@@ -15,7 +15,7 @@
          <p class="category"> Valido de: {{ date('d/m/Y',strtotime($promocao->data_inicio))}}</p>
          <p class="category"> Até: {{ date('d/m/Y',strtotime($promocao->data_final))}}</p>
          <div class="content">
-
+             <a href="" class="btn btn-lg btn-success btn-round">Chamar Garçon</a>
          </div>
      </div>
  </div>

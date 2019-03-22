@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Models\Promocao;
-use BaconQrCode\Encoder\QrCode;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -18,6 +17,7 @@ class PromocaoController extends Controller
 
 
     public function qrCode($id){
+
         $promocao = Promocao::find($id);
         $promocao_code = encrypt($promocao->id);
         $url = env('APP_URL').'/promocao/code/';

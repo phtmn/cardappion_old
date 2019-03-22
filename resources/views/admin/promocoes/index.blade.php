@@ -70,7 +70,7 @@
                         <input type="date" name="data_final" class="form-control">
                     </div>
 
-                    <input type="hidden" name="user_id" value="{{auth()->user()->id}}">
+                    {{--<input type="hidden" name="user_id" value="{{auth()->user()->id}}">--}}
 
             </div>
             <div class="modal-footer">

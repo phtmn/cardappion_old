@@ -15,7 +15,7 @@
     <p>Clique no link para testar em ambiente de desenvolvimento:</p>
     <a href="{{ $url.$promocao_code }}">{{ $url.$promocao_code }}</a>
 
-    {!! QrCode::size(600)->generate($promocao_code); !!}
+    {!! QrCode::size(600)->generate($url.$promocao_code); !!}
 
 </div>
 </body>

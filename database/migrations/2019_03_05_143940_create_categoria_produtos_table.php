@@ -13,7 +13,7 @@ class CreateCategoriaProdutosTable extends Migration
      */
     public function up()
     {
-        Schema::create('categoria__produtos', function (Blueprint $table) {
+        Schema::create('categoria_produtos', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nome');
             $table->timestamps();
