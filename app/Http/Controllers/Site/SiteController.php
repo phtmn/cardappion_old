@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Site;
 
-use App\Models\Promocao;
+use App\Models\Promotion;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -15,10 +15,10 @@ class SiteController extends Controller
     public function promocao($id){
 
         $id         = decrypt($id);
-        $promocao   = Promocao::find($id);
+        $promocao   = Promotion::find($id);
 
         return view('site.promocao.show',[
-            'promocao' => $promocao
+            'promotion' => $promocao
         ]);
     }
 }

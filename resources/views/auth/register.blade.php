@@ -1,126 +1,91 @@
-@extends('layouts.site')
+@extends('layouts.app')
 
-@section('conteudo_principal')
-    <div class="page-header clear-filter" filter-color="orange">
-        <div class="page-header-image" style="background-image:url('{{asset('vendor/site/assets/img/login.jpg')}}')"></div>
-        <div class="content">
-            <div class="container">
-                <div class="col-md-4 ml-auto mr-auto">
-                    <div class="card card-login card-plain">
-                        <form class="form" method="POST" action="{{route('register')}}">
-                            @csrf
-                            <div class="card-header text-center">
-                                <div class="logo-container">
-                                    {{--<img src="{{asset('vendor/site/assets/img/now-logo.png')}}" alt="">--}}
-                                </div>
+@section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">{{ __('Register') }}</div>
+
+                <div class="card-body">
+                    <form method="POST" action="{{ route('register') }}">
+                        @csrf
+
+                        <div class="form-group row">
+                            <label for="tenant" class="col-md-4 col-form-label text-md-right">{{ __('Empresa') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="tenant" type="text" class="form-control{{ $errors->has('tenant') ? ' is-invalid' : '' }}" name="tenant" value="{{ old('tenant') }}" required autofocus>
+
+                                @if ($errors->has('tenant'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('tenant') }}</strong>
+                                    </span>
+                                @endif
                             </div>
-                            <div class="card-body">
+                        </div>
 
-                                <div class="input-group no-border input-lg">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">
-                                          <i class="now-ui-icons users_circle-08"></i>
-                                        </span>
-                                    </div>
-                                    <input type="name" class="form-control" placeholder="Como se chama?" name="name">
-                                    @if ($errors->has('name'))
-                                        <span class="invalid-feedback" role="alert">
+                        <div class="form-group row">
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
+
+                                @if ($errors->has('name'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('name') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+
+                                @if ($errors->has('email'))
+                                    <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('email') }}</strong>
                                     </span>
-                                    @endif
-                                </div>
+                                @endif
+                            </div>
+                        </div>
 
-                                <div class="input-group no-border input-lg">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">
-                                          <i class="now-ui-icons users_circle-08"></i>
-                                        </span>
-                                    </div>
-                                    <input type="email" class="form-control" placeholder="Seu Email" name="email">
-                                    @if ($errors->has('email'))
-                                        <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                    @endif
-                                </div>
+                        <div class="form-group row">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
-                                <div class="input-group no-border input-lg">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">
-                                          <i class="now-ui-icons text_caps-small"></i>
-                                        </span>
-                                    </div>
-                                    <input type="password" placeholder="Digite uma senha" name="password" class="form-control" />
-                                    @if ($errors->has('password'))
-                                        <span class="invalid-feedback" role="alert">
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+
+                                @if ($errors->has('password'))
+                                    <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('password') }}</strong>
                                     </span>
-                                    @endif
-                                </div>
-
-                                <div class="input-group no-border input-lg">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">
-                                          <i class="now-ui-icons text_caps-small"></i>
-                                        </span>
-                                    </div>
-                                    <input type="password" placeholder="Confirme sua senha" name="password_confirmation" class="form-control" />
-                                    @if ($errors->has('password_confirmation'))
-                                        <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('password_confirmation') }}</strong>
-                                    </span>
-                                    @endif
-                                </div>
+                                @endif
                             </div>
-                            <div class="card-footer text-center">
-                                <button type="submit" class="btn btn-primary btn-round btn-lg btn-block">Entrar</button>
-                                <div class="pull-left">
-                                    <h6>
-                                        <a href="{{route('login')}}" class="link text-white">Já possuo conta</a>
-                                    </h6>
-                                </div>
-                                <div class="pull-right">
-                                    <h6>
-                                        <a href="#pablo" class="link text-white">Precisa de Ajuda?</a>
-                                    </h6>
-                                </div>
-                        </form>
-                    </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-0">
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" class="btn btn-primary">
+                                    {{ __('Register') }}
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-    <footer class="footer">
-        <div class="container">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">
-                            CardapiON
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Sobre nós
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Blog
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="copyright" id="copyright">
-                &copy;
-                <script>
-                    document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
-                </script>, Designed by
-                <a href="#" target="_blank">Quem ama Tecnologia</a>. Coded by
-                <a href="#" target="_blank">Laravel 5.8</a>.
-            </div>
-        </div>
-    </footer>
+</div>
 @endsection
-
-

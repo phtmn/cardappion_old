@@ -12,8 +12,8 @@
 
 <div class="visible-print text-center">
 
-    <p>Clique no link para testar em ambiente de desenvolvimento:</p>
-    <a href="{{ $url.$promocao_code }}">{{ $url.$promocao_code }}</a>
+    {{--<p>Clique no link para testar em ambiente de desenvolvimento:</p>--}}
+    {{--<a href="{{ $url.$promocao_code }}">{{ $url.$promocao_code }}</a>--}}
 
     {!! QrCode::size(600)->generate($url.$promocao_code); !!}
 

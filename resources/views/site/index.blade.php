@@ -6,7 +6,7 @@
     </div>
     <div class="content-center">
         <div class="container">
-            <h1 class="title">Configurar um texto aqui e subistituir a imagem</h1>
+            <h1 class="title">CardAppON </h1>
             <div class="text-center">
                 <a href="#" class="btn btn-primary btn-icon btn-round">
                     <i class="fab fa-facebook-square"></i>

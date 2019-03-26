@@ -10,10 +10,10 @@
          <div class="photo-container">
              <img src="../assets/img/ryan.jpg" alt="">
          </div>
-         <h3 class="title"> {{$promocao->descricao}}</h3>
-         <h1 class="title"> RS {{ number_format($promocao->valor_promocional,2,',','.')}}</h1>
-         <p class="category"> Valido de: {{ date('d/m/Y',strtotime($promocao->data_inicio))}}</p>
-         <p class="category"> Até: {{ date('d/m/Y',strtotime($promocao->data_final))}}</p>
+         <h3 class="title"> {{$promotion->description}}</h3>
+         <h1 class="title"> RS {{ number_format($promotion->promotion_value,2,',','.')}}</h1>
+         <p class="category"> Valido de: {{ date('d/m/Y',strtotime($promotion->start_date))}}</p>
+         <p class="category"> Até: {{ date('d/m/Y',strtotime($promotion->end_date))}}</p>
          <div class="content">
              <a href="" class="btn btn-lg btn-success btn-round">Chamar Garçon</a>
          </div>

@@ -26,11 +26,11 @@
                     @forelse($data as $d)
                         <tr>
                             <td>{{$d->id}}</td>
-                            <td>{{$d->descricao}}</td>
-                            <td>R$ {{ number_format($d->valor_promocional,2,',','.') }}</td>
-                            <td>{{ date('d/m/Y',strtotime($d->data_inicio))}} Até {{date('d/m/Y',strtotime($d->data_final))}}</td>
+                            <td>{{$d->description}}</td>
+                            <td>R$ {{ number_format($d->promotion_value,2,',','.') }}</td>
+                            <td>{{ date('d/m/Y',strtotime($d->start_date))}} Até {{date('d/m/Y',strtotime($d->end_date))}}</td>
                             <td>
-                                <a href="{{route('promocao.qrCode',$d->id)}}" class="btn btn-success btn-round">QRCode</a>
+                                <a href="{{route('promotion.qrCode',$d->id)}}" class="btn btn-success btn-round">QRCode</a>
                             </td>
                         </tr>
                     @empty
@@ -52,26 +52,23 @@
                 {{--</button>--}}
                 <h6 class="title title-up">Incluir Promoção</h6>
             </div>
-            <form action="{{route('promocao.store')}}" method="POST">
+            <form action="{{route('promotions.store')}}" method="POST">
                 @csrf
             <div class="modal-body">
                     <div class="form-group">
-                        <input type="text" name="descricao" class="form-control" placeholder="Nome da Promoção" required>
+                        <input type="text" name="description" class="form-control" placeholder="Nome da Promoção" required>
                     </div>
 
                     <div class="form-group">
-                        <input type="text" name="valor_promocional" class="form-control" placeholder="Valor promocional" required>
+                        <input type="text" name="promotion_value" class="form-control" placeholder="Valor promocional" required>
                     </div>
 
                     <div class="form-group">
-                        <input type="date" name="data_inicio" class="form-control">
+                        <input type="date" name="start_date" class="form-control">
                     </div>
                     <div class="form-group">
-                        <input type="date" name="data_final" class="form-control">
+                        <input type="date" name="end_date" class="form-control">
                     </div>
-
-                    {{--<input type="hidden" name="user_id" value="{{auth()->user()->id}}">--}}
-
             </div>
             <div class="modal-footer">
                 <button type="submit" class="btn btn-default">Incluir Promoção</button>

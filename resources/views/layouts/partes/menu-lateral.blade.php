@@ -18,7 +18,7 @@
         </a>
     </li>
     <li>
-        <a href="{{route('promocao.index')}}">
+        <a href="{{route('promotions.index')}}">
             <i class="now-ui-icons ui-1_bell-53"></i>
             <p>Promoções</p>
         </a>

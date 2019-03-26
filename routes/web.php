@@ -20,6 +20,6 @@ Auth::routes();
 Route::group(['prefix'=>'admin','namespace'=>'Admin','middleware'=>'auth'],function(){
 
     Route::get('/','DashboardController@index')->name('dashboard.index');
-    Route::resource('promocao','PromocaoController');
-    Route::get('qrcode/{id}', 'PromocaoController@qrCode')->name('promocao.qrCode');
+    Route::resource('promotions','PromotionController');
+    Route::get('qrcode/{id}', 'PromotionController@qrCode')->name('promotion.qrCode');
 });

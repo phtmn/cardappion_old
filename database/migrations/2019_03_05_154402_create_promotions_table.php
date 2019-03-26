@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePromocaosTable extends Migration
+class CreatePromotionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,19 @@ class CreatePromocaosTable extends Migration
      */
     public function up()
     {
-        Schema::create('promocaos', function (Blueprint $table) {
+        Schema::create('promotions', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('description');
+            $table->dateTime('start_date');
+            $table->dateTime('end_date');
+            $table->decimal('promotion_value',10,2);
+            $table->text('img')->nullable();
+            $table->unsignedBigInteger('tenant_id');
             $table->unsignedBigInteger('user_id');
-            $table->string('descricao');
-            $table->dateTime('data_inicio');
-            $table->dateTime('data_final');
-            $table->decimal('valor_promocional',10,2);
-            $table->text('foto')->nullable();
 
+            $table->foreign('tenant_id')->references('id')->on('tenants')->onDelete('cascade');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+
             $table->softDeletes();
             $table->timestamps();
         });
@@ -35,6 +38,6 @@ class CreatePromocaosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('promocaos');
+        Schema::dropIfExists('promotions');
     }
 }

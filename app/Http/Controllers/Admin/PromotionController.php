@@ -2,23 +2,23 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Models\Promocao;
+use App\Models\Promotion;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class PromocaoController extends Controller
+class PromotionController extends Controller
 {
     public function index(){
 
         return view('admin.promocoes.index',[
-            'data' => $data = Promocao::all()
+            'data' => $data = Promotion::all()
         ]);
     }
 
 
     public function qrCode($id){
 
-        $promocao = Promocao::find($id);
+        $promocao = Promotion::find($id);
         $promocao_code = encrypt($promocao->id);
         $url = env('APP_URL').'/promocao/code/';
 
@@ -30,7 +30,9 @@ class PromocaoController extends Controller
 
     public function store(Request $request){
 
-        Promocao::create($request->all());
-        return redirect()->route('promocao.index');
+        $promotion = $request->user()->promotions()
+                        ->create($request->all());
+
+        return redirect()->route('promotions.index');
     }
 }

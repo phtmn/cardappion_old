@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use App\Scopes\User\UserScope;
 use Illuminate\Database\Eloquent\Scope;
@@ -38,6 +38,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function tenant(){
+        return $this->belongsTo(Tenant::class);
+    }
+
+    public function promotions(){
+        return $this->hasMany(Promotion::class);
+    }
 
 
 }
