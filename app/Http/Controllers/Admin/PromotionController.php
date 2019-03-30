@@ -30,7 +30,7 @@ class PromotionController extends Controller
 
     public function store(Request $request){
 
-        $promotion = $request->user()->promotions()
+        $request->user()->promotions()
                         ->create($request->all());
 
         return redirect()->route('promotions.index');
