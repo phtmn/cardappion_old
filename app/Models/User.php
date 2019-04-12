@@ -47,5 +47,15 @@ class User extends Authenticatable
         return $this->hasMany(Promotion::class);
     }
 
+    public function menus(){
+        return $this->hasMany(Menu::class);
+    }
+
+    public function config(){
+        return $this->hasOne(Config::class)->first();
+    }
+
+
+
 
 }

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTenantsTable extends Migration
+class CreateProductMenusTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,13 @@ class CreateTenantsTable extends Migration
      */
     public function up()
     {
-        Schema::create('tenants', function (Blueprint $table) {
+        Schema::create('menu_product', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name')->unique();
-            $table->uuid('uuid');
-            $table->string('plan')->nullable();
-            $table->boolean('active')->default(1);
+            $table->unsignedBigInteger('product_id');
+            $table->unsignedBigInteger('menu_id');
+
+            $table->foreign('product_id')->references('id')->on('products');
+            $table->foreign('menu_id')->references('id')->on('menus');
             $table->timestamps();
         });
     }
@@ -30,6 +31,6 @@ class CreateTenantsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tenants');
+        Schema::dropIfExists('menu_product');
     }
 }

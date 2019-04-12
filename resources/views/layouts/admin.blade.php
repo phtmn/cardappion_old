@@ -28,10 +28,10 @@
       -->
         <div class="logo">
             <a href="{{route('dashboard.index')}}" class="simple-text logo-mini">
-                CPION
+
             </a>
             <a href="{{route('dashboard.index')}}" class="simple-text logo-normal">
-                CardapiON
+                {{ auth()->user()->name }}
             </a>
         </div>
         <div class="sidebar-wrapper" id="sidebar-wrapper">
