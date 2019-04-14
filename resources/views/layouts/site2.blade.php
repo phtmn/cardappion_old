@@ -67,7 +67,7 @@
     <ul class="cd-hero__slider">
         <li class="cd-hero__slide cd-hero__slide--selected js-cd-slide">
             <div class="cd-hero__content cd-hero__content--half-width">
-                <h2>Familiarize Your Creative Apps</h2>
+                <h2>Familiarizeee Your Creative Apps</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <a href="#0" class="hvr-bounce-to-right cd-hero__btn">App Store</a>
                 <a href="#0" class="hvr-bounce-to-right cd-hero__btn cd-hero__btn--secondary">GooglePlay</a>

@@ -10,7 +10,7 @@ class SiteController extends Controller
 {
     public function home(){
         //return view('site.index');
-        return view('layouts.site2');
+        return view('layouts.home');
     }
 
     public function promocao($id){
