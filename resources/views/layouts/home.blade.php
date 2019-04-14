@@ -113,7 +113,7 @@
             <ul class="home-content__social">
                 <li><a href="#0">Instagram</a></li>
                 <li><a href="#0">twitter</a></li>
-               
+                
             </ul>
 
         </div> <!-- end home-content -->
@@ -133,7 +133,7 @@
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
                 <h1 class="display-1">
-                    Simply The Best Messaging App Out There.
+                    Sobre Nós
                 </h1>
                 <p class="lead">
                     Et nihil atque ex. Reiciendis et rerum ut voluptate. Omnis molestiae nemo est. 
@@ -273,7 +273,7 @@
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
                 <h1 class="display-1">
-                    Loaded With Features You Would Absolutely Love.
+                    Serviços
                 </h1>
                 <p class="lead">
                     Et nihil atque ex. Reiciendis et rerum ut voluptate. Omnis molestiae nemo est. 
@@ -429,7 +429,7 @@
         <div class="row section-header align-center" data-aos="fade-up">
             <div class="col-full">
                 <h1 class="display-1">
-                   Our Simple <br> Straight-Forward Pricing.
+                   Planos <br> 
                 </h1>
                 <p class="lead">
                     Et nihil atque ex. Reiciendis et rerum ut voluptate. Omnis molestiae nemo est. 
@@ -537,7 +537,7 @@
         <div class="row section-header align-center">
             <div class="col-full">
                 <h1 class="display-1">
-                    Let's Stay In Touch.
+                Agradecemos sua visita!
                 </h1>
                 <p class="lead">
                 Subscribe for updates, special offers, and other amazing stuff.
@@ -545,29 +545,13 @@
             </div>
         </div> <!-- end section-header -->
 
-        <div class="row footer__top">
-
-            <div class="col-full footer__subscribe end">
-                <div class="subscribe-form">
-                    <form id="mc-form" class="group" novalidate="true">
-
-                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
-            
-                        <input type="submit" name="subscribe" value="Sign Up">
-            
-                        <label for="mc-email" class="subscribe-message"></label>
-            
-                    </form>
-                </div>
-            </div>
-
-        </div> <!-- end footer__top -->
+        
 
         <div class="row footer__bottom">
 
             <div class="footer__about col-five tab-full left">
 
-                <h4>About Kairos.</h4>
+                <h4>Sobre Nós</h4>
 
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed 
@@ -577,9 +561,9 @@
                 </p>
 
                 <ul class="footer__social">
-                    <li><a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                    <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
                     <li><a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                   
                 </ul>
             </div>
 
@@ -587,20 +571,20 @@
                 <div class="row">
 
                     <div class="footer__site-links col-five mob-full">
-                        <h4>Site links.</h4>
+                        <h4>Links</h4>
 
                         <ul class="footer__site-links">
-                            <li><a href="#home" class="smoothscroll">Intro</a></li>
-                            <li><a href="#about" class="smoothscroll">About</a></li>
-                            <li><a href="#features" class="smoothscroll">Features</a></li>
-                            <li><a href="#pricing" class="smoothscroll">Pricing</a></li>
+                            <li><a href="#home" class="smoothscroll">Home</a></li>
+                            <li><a href="#about" class="smoothscroll">Sobre Nós</a></li>
+                            <li><a href="#features" class="smoothscroll">Serviços</a></li>
+                            <li><a href="#pricing" class="smoothscroll">Planos</a></li>
                             <li><a href="#download" class="smoothscroll">Download</a></li>
-                            <li><a href="#0">Privacy Policy</a></li>
+                            
                         </ul>
                     </div>
 
                     <div class="footer__contact col-seven mob-full">
-                        <h4>Contact Us.</h4>
+                        <h4>Contato</h4>
 
                         <p>
                         Phone: (+63) 555 1212 <br>
