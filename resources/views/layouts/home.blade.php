@@ -26,8 +26,8 @@
 
     <!-- favicons
     ================================================== -->
-    <link rel="shortcut icon" href="{{asset('vendor/home/favicon.ico')}}" type="image/x-icon">
-    <link rel="icon" href="{{asset('vendor/home/favicon.ico')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('vendor/home/imagens/ico.jpg')}}" type="image/x-icon">
+    <link rel="icon" href="{{asset('vendor/home/images/ico.jpg')}}" type="image/x-icon">
 
 </head>
 
@@ -51,7 +51,7 @@
         <div class="row">
             <div class="header-logo">
                 <a class="site-logo" href="index.html">
-                    <img src="{{asset('vendor/home/images/logo.svg')}}" alt="Homepage">
+                    <img src="{{asset('vendor/home/images/logo.jpg')}}" alt="Homepage">
                 </a>
             </div>
     
@@ -65,8 +65,8 @@
                 </ul>
     
                 <div class="header-cta">
-                    <a href="#download" class="btn btn--primary header-cta__btn smoothscroll"> Entrar</a>
-                    <a href="#download" class="btn btn--success header-cta__btn smoothscroll"> Cadastre-se</a>
+                    <a href="{{url('/login')}}" class="btn btn--primary header-cta__btn smoothscroll"> Entrar</a>
+                    <a href="{{url('/register')}}" class="btn btn--success header-cta__btn smoothscroll"> Cadastre-se</a>
                 </div>
             </nav> <!-- end header-nav-wrap -->
     
@@ -88,30 +88,32 @@
 
                 <div class="home-content__left">
                     <h1>
-                    An Amazing App <br>
-                    That Does It All.
+                    Soluções em Cardápios Digitais <br>
+     
                     </h1>
     
                     <h3>
-                    Voluptatem ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explica. Nemo enim ipsam voluptatem quia. 
-                    Ut quis enim.
+                    Visualize os cardápios e promoções dos melhores estabelecimentos 
+                    
                     </h3>
     
                     <div class="home-content__btn-wrap">
                         <a href="#download" class="btn btn--primary home-content__btn smoothscroll">
-                            Get The App
+                           Download App
                         </a>
                     </div>
                 </div> <!-- end home-content__left-->
 
                 <div class="home-content__right">
-                    <img src="{{asset('vendor/home/images/hero-app-screens-800.png')}}" srcset="{{asset('vendor/home/images/images/hero-app-screens-800.png 1x')}}, {{asset('vendor/home/images/images/hero-app-screens-1600.png 2x')}}">
+                    <!-- <img src="{{asset('vendor/home/images/hero-app-screens-800.png')}}" srcset="{{asset('vendor/home/images/images/hero-app-screens-800.png 1x, hero-app-screens-1600.png 2x')}}, {{asset('vendor/home/images/images/hero-app-screens-1600.png 2x')}}"> -->
+                    <img src="{{asset('vendor/home/images/hero-app-screens-800.png')}}" >
                 </div> <!-- end home-content__right -->
 
             </div> <!-- end home-content__main -->
 
             <ul class="home-content__social">
                 <li><a href="#0">Instagram</a></li>
+                <li><a href="#0">Facebook</a></li>
                 <li><a href="#0">twitter</a></li>
                 
             </ul>
@@ -499,7 +501,7 @@
         <div class="row section-header align-center" data-aos="fade-up">
             <div class="col-full">
                 <h1 class="display-1">
-                    Join Our Community of 3,000,000+ Users.
+                    Download
                 </h1>
                 <p class="lead">
                     Et nihil atque ex. Reiciendis et rerum ut voluptate. Omnis molestiae nemo est. 
@@ -519,12 +521,17 @@
         </div>
 
         <div class="row download-bottom-image" data-aos="fade-up">
-            <img src="{{asset('vendor/home/images/app-screen-1400.png')}}"  
-                srcset= "{{asset('vendor/home/images/app-screen-600.png 600w')}}," 
-                        "{{asset('vendor/home/images/app-screen-1400.png 1400w')}}," 
-                        "{{asset('vendor/home/images/app-screen-2800.png 2800w')}}" 
+
+        <img src="{{asset('vendor/home/images/app-screen-1400.png')}}"                   
                 sizes="(max-width: 2800px) 100vw, 2800px" 
-                alt="App Screenshots"> 
+                alt="App Screenshots">     
+
+           {{-- <img src="{{asset('vendor/home/images/app-screen-1400.png')}}"  --}}
+           {{-- srcset= "{{asset('vendor/home/images/app-screen-600.png 600w')}}," --}}
+           {{--         "{{asset('vendor/home/images/app-screen-1400.png 1400w')}},"  --}}
+           {{--         "{{asset('vendor/home/images/app-screen-2800.png 2800w')}}"  --}}
+           {{-- sizes="(max-width: 2800px) 100vw, 2800px"  --}}
+            {{-- alt="App Screenshots"> --}}
         </div>
 
     </section> <!-- end s-download -->
@@ -562,6 +569,7 @@
 
                 <ul class="footer__social">
                     <li><a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#0"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
                     <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
                    
                 </ul>
@@ -592,7 +600,7 @@
                         </p>
                         <p>
                         Need help or have a question? Contact us at: <br>
-                        <a href="mailto:#0" class="footer__mail-link">support@kairos.com</a>
+                        <a href="mailto:#0" class="footer__mail-link">contato@cardappon.com</a>
                         </p>
                     </div>
 
@@ -600,8 +608,8 @@
             </div>
 
             <div class="col-full ss-copyright">
-                <span>&copy; Copyright Kairos 2018</span> 
-                <span>Design by <a href="https://www.styleshout.com/">styleshout</a></span>
+                <span>&copy; Copyright cardpAppOn 2019</span> 
+                
             </div>
 
         </div> <!-- end footer__bottom -->

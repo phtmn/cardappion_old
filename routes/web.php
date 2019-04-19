@@ -12,6 +12,7 @@
 */
 
 Route::get('/','Site\SiteController@home')->name('site');
+
 Route::get('/promocao/code/{id}', 'Site\SiteController@promocao');
 
 Auth::routes();
