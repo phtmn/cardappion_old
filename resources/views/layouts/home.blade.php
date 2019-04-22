@@ -93,7 +93,7 @@
                     </h1>
     
                     <h3>
-                    Visualize os cardápios e promoções dos melhores estabelecimentos 
+                    Todos os cardápios e promoções em um único lugar. 
                     
                     </h3>
     
@@ -138,13 +138,11 @@
                     Sobre Nós
                 </h1>
                 <p class="lead">
-                    Et nihil atque ex. Reiciendis et rerum ut voluptate. Omnis molestiae nemo est. 
-                    Ut quis enim rerum quia assumenda repudiandae non cumque qui. Amet repellat 
-                    omnis ea.
+                    Por uma vida mais ágil e simples, nosso objetivo é melhorar os estabelecimentos de alimentação com soluções baseadas em cardápios digitais.
                 </p>
             </div>
         </div> <!-- end section-header -->
-
+<!--
         <div class="row wide about-desc" data-aos="fade-up">
 
             <div class="col-full slick-slider about-desc__slider">
@@ -157,7 +155,7 @@
                     Ut quis enim rerum quia assumenda repudiandae non cumque qui. Amet repellat 
                     omnis ea aut cumque eos.
                     </p>
-                </div>  <!-- end about-desc__slide -->
+                </div>  
 
                 <div class="about-desc__slide">
                     <h3 class="item-title">Smart.</h3>
@@ -167,7 +165,7 @@
                     Ut quis enim rerum quia assumenda repudiandae non cumque qui. Amet repellat 
                     omnis ea aut cumque eos.
                     </p>
-                </div>  <!-- end about-desc__slide -->
+                </div>  
 
                 <div class="about-desc__slide">
                     <h3 class="item-title">Powerful.</h3>
@@ -177,7 +175,7 @@
                     Ut quis enim rerum quia assumenda repudiandae non cumque qui. Amet repellat 
                     omnis ea aut cumque eos.
                     </p>
-                </div>  <!-- end about-desc__slide -->
+                </div>  
 
                 <div class="about-desc__slide">
                     <h3 class="item-title">Secure.</h3>
@@ -187,10 +185,10 @@
                     Ut quis enim rerum quia assumenda repudiandae non cumque qui. Amet repellat 
                     omnis ea aut cumque eos.
                     </p>
-                </div>  <!-- end about-desc__slide -->
+                </div>  
 
-            </div> <!-- end about-desc__slider -->
-            
+            </div> 
+            -->
         </div> <!-- end about-desc -->
 
     </section> <!-- end s-about -->
@@ -232,34 +230,32 @@
 
         <div class="row process-wrap">
 
-            <h2 class="display-2 text-center" data-aos="fade-up">How The App Works?</h2>
+            <h2 class="display-2 text-center" data-aos="fade-up">Fazendo...</h2>
 
             <div class="process" data-aos="fade-up">
                 <div class="process__steps block-1-2 block-tab-full group">
 
                     <div class="col-block step">
-                        <h3 class="item-title">Sign-Up</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-                        </p> 
+                        <h3 class="item-title">Cadastra-se na plataforma</h3>
+                        <p>Cadastre-se agora no cardAppOn para organizar e adquirir mais agilidade ao seu delivery.    </p> 
                     </div>
 
                     <div class="col-block step">
-                        <h3 class="item-title">Create</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-                        </p> 
+                        <h3 class="item-title">Cadastre seus clientes</h3>
+                        <p>Você conhece bem os seus clientes? Tenha um cadastro completo das informações pessoais bem como suas principais preferências.</p> 
                     </div>
                
                     <div class="col-block step">
-                        <h3 class="item-title">Compose</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-                        </p> 
+                        <h3 class="item-title">Cadastre seu cardápio </h3>
+                        <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p> -->
                     </div>
 
                     <div class="col-block step">
-                        <h3 class="item-title">Send</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-                        </p> 
+                        <h3 class="item-title">Envie o cardápio aos seus clientes</h3>
+                        <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p> -->
                     </div>  
+
+                  
 
                 </div> <!-- end process__steps -->
            </div> <!-- end process -->
@@ -278,24 +274,22 @@
                     Serviços
                 </h1>
                 <p class="lead">
-                    Et nihil atque ex. Reiciendis et rerum ut voluptate. Omnis molestiae nemo est. 
-                    Ut quis enim rerum quia assumenda repudiandae molestiae cumque qui. Amet repellat 
-                    omnis ea.
+                    O cardAppOn é perfeito para o seu estabeleciomento, seja ele do tamanho que for.
+
+                
                 </p>
             </div>
         </div> <!-- end section-header -->
 
-        <div class="row features block-1-3 block-m-1-2">
+        <div class="row features block-1-4 block-m-1-2">
 
             <div class="col-block item-feature" data-aos="fade-up">
                 <div class="item-feature__icon">
                     <i class="icon-upload"></i>
                 </div>
                 <div class="item-feature__text">
-                    <h3 class="item-title">Cloud Based</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    <h3 class="item-title">Agilidade</h3>
+                    <p>Cardápion digital a todo momento.
                     </p>
                 </div>
             </div>
@@ -305,10 +299,8 @@
                     <i class="icon-video-camera"></i>
                 </div>
                 <div class="item-feature__text">
-                    <h3 class="item-title">Voice & Video</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    <h3 class="item-title">Disponibilidade</h3>
+                    <p>Cardápion digital a todo momento com acesso aos itens que realmente estão sendo servidos no dia.
                     </p>
                 </div>
             </div>
@@ -318,10 +310,8 @@
                     <i class="icon-shield"></i>
                 </div>  
                 <div class="item-feature__text">
-                    <h3 class="item-title">Always Secure</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    <h3 class="item-title">Integridade</h3>
+                    <p>Cardápion digital a todo momento com informações de preço atualizadas de forma instantânea.
                     </p>
                 </div>
             </div>
@@ -331,39 +321,13 @@
                     <i class="icon-lego-block"></i>
                 </div>
                 <div class="item-feature__text">
-                    <h3 class="item-title">Play Games</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    <h3 class="item-title">Rastreabilidade</h3>
+                    <p>Cardápion digital com métricas do que é mais pedido por um determinado cliente.
                     </p>
                 </div>
             </div>
 
-            <div class="col-block item-feature" data-aos="fade-up">
-                <div class="item-feature__icon">
-                    <i class="icon-chat"></i>
-                </div>
-                <div class="item-feature__text">
-                    <h3 class="item-title">Group Chat</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-                    </p>
-                </div>
-            </div>
-    
-            <div class="col-block item-feature" data-aos="fade-up">
-                <div class="item-feature__icon">
-                    <i class="icon-wallet"></i>
-                </div>
-                <div class="item-feature__text">
-                    <h3 class="item-title">Payments</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-                    </p>
-                </div>
-            </div>
+            
 
         </div> <!-- end features -->
 
@@ -371,7 +335,7 @@
 
             <div class="row">
                 <div class="col-full testimonials-header">
-                    <h2 class="display-2">Our Users Love Our App!</h2>
+                    <h2 class="display-2">Para Marmitarias</h2>
                 </div>
             </div>
 
@@ -380,40 +344,55 @@
                 <div class="col-full slick-slider testimonials__slider">
 
                     <div class="testimonials__slide">
-                        <img src="{{asset('vendor/home/images/avatars/user-03.jpg')}}" alt="Author image" class="testimonials__avatar">
+                        <img src="{{asset('vendor/home/images/interrogacao.png')}}" alt="Author image" class="testimonials__avatar">
                         
-                        <p>Qui ipsam temporibus quisquam velMaiores eos cumque distinctio nam accusantium ipsum. 
-                        Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium praesentium corpori.</p>
+                        <h3 class="item-title"> Cadastre seu estabeleciomento </h3>
 
                         <div class="testimonials__author">
-                            <span class="testimonials__name">Naruto Uzumaki</span>
-                            <a href="#0" class="testimonials__link">@narutouzumaki</a>
+                            
+                            <span class="testimonials__link">Como está a organização e agilidade do seu delivery?</span>
                         </div>
                     </div> <!-- end testimonials__slide -->
 
                     <div class="testimonials__slide">
-                        <img src="{{asset('vendor/home/images/avatars/user-05.jpg')}}" alt="Author image" class="testimonials__avatar">
+                        <img src="{{asset('vendor/home/images/interrogacao.png')}}" alt="Author image" class="testimonials__avatar">
                         
-                        <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
-                        Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.</p>
+                        <h3 class="item-title">Cadastre seus clientes</h3>
                         
                         <div class="testimonials__author">
-                            <span class="testimonials__name">Sasuke Uchiha</span>
-                            <a href="#0" class="testimonials__link">@sasukeuchiha</a>
+                            
+                            <a href="" class="testimonials__link">Você conhece bem os seus clientes? </a>
                         </div>
                     </div> <!-- end testimonials__slide -->
 
                     <div class="testimonials__slide">
-                        <img src="{{asset('vendor/home/images/avatars/user-01.jpg')}}" alt="Author image" class="testimonials__avatar">
+                        <img src="{{asset('vendor/home/images/032-512.png')}}" alt="Author image" class="testimonials__avatar">
                         
-                        <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
-                        Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.</p>
+                        <h3 class="item-title">Crie seu cardápio</h3>
 
                         <div class="testimonials__author">
-                            <span class="testimonials__name">Shikamaru Nara</span>
-                            <a href="#0" class="testimonials__link">@shikamarunara</a>
+                            <span class="testimonials__link">Envie facilmente aos seus clientes.</span>
+                           
                         </div>
-                    </div> <!-- end testimonials__slide -->
+                    </div>
+                    
+                    
+                   
+
+                    <div class="testimonials__slide">
+                        <img src="{{asset('vendor/home/images/delivery.png')}}" alt="Author image" class="testimonials__avatar">
+                        
+                        <h3 class="item-title">Cadastre seus entregadores</h3>
+
+                        <div class="testimonials__author">
+                            
+                            <span  class="testimonials__link">Controle seus pedidos.</span>
+                        </div>
+                    </div>
+
+                    
+                    
+                     <!-- end testimonials__slide -->
                     
                 </div> <!-- end testimonials__slider -->
 
@@ -504,9 +483,7 @@
                     Download
                 </h1>
                 <p class="lead">
-                    Et nihil atque ex. Reiciendis et rerum ut voluptate. Omnis molestiae nemo est. 
-                    Ut quis enim rerum quia assumenda repudiandae non cumque qui. Amet repellat 
-                    omnis ea.
+                Visualize os cardápios e promoções dos melhores estabelecimentos de forma ágil e simples.
                 </p>
             </div>
         </div> <!-- end section-header -->
@@ -544,10 +521,10 @@
         <div class="row section-header align-center">
             <div class="col-full">
                 <h1 class="display-1">
-                Agradecemos sua visita!
+                Fazer parte do cardAppOn é muito simples.
                 </h1>
                 <p class="lead">
-                Subscribe for updates, special offers, and other amazing stuff.
+                Agradecemos sua visita!
                 </p>
             </div>
         </div> <!-- end section-header -->
@@ -561,10 +538,7 @@
                 <h4>Sobre Nós</h4>
 
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed 
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                laboris nisi ut aliquip ex consectetur adipisicing elit do eiusmod tempor.
+                Por uma vida mais ágil e simples, nosso objetivo é melhorar os estabelecimentos de alimentação com soluções baseadas em cardápios digitais.
                 </p>
 
                 <ul class="footer__social">
