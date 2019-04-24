@@ -28,7 +28,7 @@
 
         </div>
         <div class="card-body">
-            <div class="table-responsive table-bordered">
+            <div class="table-responsive">
                 <table class="table">
                     <thead class="text-primary">
                         <th>Codigo</th>

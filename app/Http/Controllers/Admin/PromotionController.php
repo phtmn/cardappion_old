@@ -19,13 +19,8 @@ class PromotionController extends Controller
     public function qrCode($id){
 
         $promocao = Promotion::find($id);
-        $promocao_code = encrypt($promocao->id);
-        $url = env('APP_URL').'/promocao/code/';
 
-        return view('admin.promocoes.qrcode',[
-              'promocao_code' => $promocao_code,
-              'url'     => $url
-        ]);
+        return view('admin.promocoes.qrcode',compact('promocao'));
     }
 
     public function store(Request $request){

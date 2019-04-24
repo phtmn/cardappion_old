@@ -34,7 +34,7 @@
                     <th>Nome da Promoção</th>
                     <th>Valor Promocional</th>
                     <th>Período de validade</th>
-                    <th class="text-right"> Opções</th>
+                    <th> Opções</th>
                </thead>
                <tbody>
                     @forelse($data as $d)
@@ -44,7 +44,7 @@
                             <td>R$ {{ number_format($d->promotion_value,2,',','.') }}</td>
                             <td>{{ date('d/m/Y',strtotime($d->start_date))}} Até {{date('d/m/Y',strtotime($d->end_date))}}</td>
                             <td>
-                                <a href="{{route('promotion.qrCode',$d->id)}}" class="btn btn-success btn-round">QRCode</a>
+                                <a href="{{route('promotion.qrCode',$d->id)}}" class="btn btn-success btn-round">Compartilhar</a>
                             </td>
                         </tr>
                     @empty

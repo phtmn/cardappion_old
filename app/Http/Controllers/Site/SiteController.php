@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Site;
 
 use App\Models\Menu;
+use App\Models\Promotion;
 use DB;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -14,19 +15,14 @@ class SiteController extends Controller
         return view('layouts.home');
     }
 
-    public function promocao($id){
-
-        $id         = decrypt($id);
-        $promocao   = DB::table('promotions')->find($id);
-
-        return view('site.promocao.show',[
-            'promotion' => $promocao
-        ]);
+    public function promocao($slug){
+        $promotion = Promotion::where('slug','=',$slug)->first();
+        return view('client.promotion', compact('promotion'));
     }
 
     public function menu($slug)
     {
         $menu = Menu::where('slug','=',$slug)->first();
-        return view('client.menu', compact('menu'));
+
     }
 }

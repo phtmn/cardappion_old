@@ -19,24 +19,10 @@
                         <p>Menus</p>
                     </a>
                 </li>
-            </ul>
-        </li>
-    </ul>
-</nav>
-
-<nav class="mt-2">
-    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-        <!-- Add icons to the links using the .nav-icon class
-             with font-awesome or any other icon font library -->
-        <li class="nav-item has-treeview menu-open ">
-            <a href="#" class="nav-link active">
-                <i class="nav-icon fa fa-bar-chart "></i><p>Promoções<i class="right fa fa-angle-left"></i></p>
-            </a>
-            <ul class="nav nav-treeview">
                 <li class="nav-item">
                     <a href="{{route('promotions.index')}}" class="nav-link">
-                        <i class="fa fa-dollar nav-icon"></i>
-                        <p>Lista</p>
+                        <i class="fa fa-group nav-icon"></i>
+                        <p>Promoções</p>
                     </a>
                 </li>
             </ul>
