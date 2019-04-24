@@ -17,6 +17,7 @@ class CreateProductMenusTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('product_id');
             $table->unsignedBigInteger('menu_id');
+            $table->boolean('active')->default(1);
 
             $table->foreign('product_id')->references('id')->on('products');
             $table->foreign('menu_id')->references('id')->on('menus');

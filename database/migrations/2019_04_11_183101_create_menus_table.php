@@ -18,6 +18,9 @@ class CreateMenusTable extends Migration
             $table->unsignedBigInteger('tenant_id');
             $table->unsignedBigInteger('user_id');
             $table->string('description');
+            $table->uuid('uuid');
+            $table->string('slug',100)->nullable();
+            $table->string('url')->nullable();
             $table->boolean('active');
 
             $table->foreign('tenant_id')->references('id')->on('tenants');

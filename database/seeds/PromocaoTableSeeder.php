@@ -11,7 +11,7 @@ class PromocaoTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('promocaos')->insert([
+        DB::table('promotions')->insert([
             'user_id'           => 1,
             'descricao'         => 'Rodizio de Sushi',
             'valor_promocional' => 39.00,

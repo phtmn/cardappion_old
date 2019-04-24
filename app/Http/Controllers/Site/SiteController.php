@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Site;
 
+use App\Models\Menu;
 use DB;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -21,5 +22,11 @@ class SiteController extends Controller
         return view('site.promocao.show',[
             'promotion' => $promocao
         ]);
+    }
+
+    public function menu($slug)
+    {
+        $menu = Menu::where('slug','=',$slug)->first();
+        return view('client.menu', compact('menu'));
     }
 }

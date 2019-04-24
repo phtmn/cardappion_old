@@ -45,4 +45,12 @@ class MenuController extends Controller
         }
 
     }
+
+    public function share($id){
+
+        $menu = Menu::find($id);
+        return view('admin.menus.share',compact('menu'));
+
+
+    }
 }

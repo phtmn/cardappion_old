@@ -16,6 +16,8 @@ class CreatePromotionsTable extends Migration
         Schema::create('promotions', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('description');
+            $table->uuid('uuid');
+            $table->string('url');
             $table->dateTime('start_date');
             $table->dateTime('end_date');
             $table->decimal('promotion_value',10,2);

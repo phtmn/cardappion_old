@@ -1,15 +1,30 @@
-@extends('layouts.admin')
+@extends('layouts.admin.master')
 
 @section('cabecalho')
-    <div class="panel-header panel-header-sm">
-    </div>
+
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <a href="{{ route('products.create') }}" class="btn btn-outline-primary"> Adicionar Item a esse Cardápio</a>
+                    </div><!-- /.col -->
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                            <li class="breadcrumb-item"><a href="{{route('menus.index')}}">Voltar para Menus</a></li>
+                            <li class="breadcrumb-item active">Cadastrar Produto</li>
+                        </ol>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+
 @stop
 
-@section('conteudo_principal')
+@section('conteudo')
     @include('tools.messages')
     <div class="card">
         <div class="card-header">
-            <h4 class="card-title">Você está vendo o MENU: {{$menu->description}}</h4>
+            <h4 class="card-title">Você está vendo o cardápio: {{$menu->description}}</h4>
 {{--            <a href="{{route('menus.create')}}" class="btn btn-danger btn-round"> Novo Menu</a>--}}
         </div>
         <div class="card-body">

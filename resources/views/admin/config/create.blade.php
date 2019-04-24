@@ -1,11 +1,11 @@
-@extends('layouts.admin')
+@extends('layouts.admin.master')
 
 @section('cabecalho')
     <div class="panel-header panel-header-sm">
     </div>
 @stop
 
-@section('conteudo_principal')
+@section('conteudo')
     @include('tools.messages')
  <form action="{{route('config.store')}}" method="POST">
     @csrf

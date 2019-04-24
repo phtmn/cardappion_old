@@ -65,8 +65,8 @@
                 </ul>
     
                 <div class="header-cta">
-                    <a href="{{url('/login')}}" class="btn btn--primary header-cta__btn smoothscroll"> Entrar</a>
-                    <a href="{{url('/register')}}" class="btn btn--success header-cta__btn smoothscroll"> Cadastre-se</a>
+                    <a href="{{route('login')}}" class="btn btn--primary header-cta__btn "> Entrar</a>
+                    <a href="{{route('register')}}" class="btn btn--success header-cta__btn "> Cadastre-se</a>
                 </div>
             </nav> <!-- end header-nav-wrap -->
     

@@ -1,4 +1,4 @@
-@extends('layouts.admin')
+@extends('layouts.admin.master')
 @section('cabecalho')
     <div class="panel-header panel-header-lg">
         <canvas id="bigDashboardChart"></canvas>

@@ -14,6 +14,7 @@
 Route::get('/','Site\SiteController@home')->name('site');
 
 Route::get('/promocao/code/{id}', 'Site\SiteController@promocao');
+Route::get('/menu/{slug}', 'Site\SiteController@menu');
 
 Auth::routes();
 
@@ -31,6 +32,7 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin','middleware'=>'auth'],funct
 
     Route::get('/menu-itens/{id}','MenuController@menuItens')->name('menu.menuItens');
     Route::get('/menu-item/menu/{menu}/delete/{id}','MenuController@deleteItem')->name('menu.deleteItem');
+    Route::get('/menu/share/{id}','MenuController@share')->name('menu.share');
 
     Route::get('qrcode/{id}', 'PromotionController@qrCode')->name('promotion.qrCode');
 });

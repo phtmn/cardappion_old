@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="card">
-                <div class="card-header bg-danger text-white">Cadastre seu negócio aqui</div>
+                <div class="card-header ">Cadastre seu negócio aqui</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
