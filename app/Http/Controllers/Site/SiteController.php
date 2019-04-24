@@ -2,15 +2,14 @@
 
 namespace App\Http\Controllers\Site;
 
-use App\Models\Menu;
+use App\Scopes\Tenant\TenantScope;
 use DB;
-use Illuminate\Http\Request;
+use App\Models\Menu;
 use App\Http\Controllers\Controller;
 
 class SiteController extends Controller
 {
     public function home(){
-        //return view('site.index');
         return view('layouts.home');
     }
 
@@ -26,7 +25,7 @@ class SiteController extends Controller
 
     public function menu($slug)
     {
-        $menu = Menu::where('slug','=',$slug)->first();
+        $menu = Menu::withoutGlobalScopes()->where('slug','=',$slug)->first();
         return view('client.menu', compact('menu'));
     }
 }
