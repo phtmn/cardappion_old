@@ -25,7 +25,11 @@ class SiteController extends Controller
 
     public function menu($slug)
     {
-        $menu = Menu::withoutGlobalScopes()->where('slug','=',$slug)->first();
-        return view('client.menu', compact('menu'));
+        $menu = Menu::withoutGlobalScopes([TenantScope::class])->where('slug','=',$slug)->first();
+        //dd($menu);
+        return view('client.menu', [
+            'menu' => $menu
+
+        ]);
     }
 }

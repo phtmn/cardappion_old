@@ -19,7 +19,7 @@
         <ion-list>
             @forelse($menu->products as $item)
               <ion-item>
-                  <ion-label>{{$item->description}}</ion-label>
+                  <ion-label>{{$item->description}} - {{$item->price}}</ion-label>
               </ion-item>
             @empty
                 <p>Nada a exibir</p>
