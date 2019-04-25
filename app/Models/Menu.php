@@ -4,14 +4,12 @@ namespace App\Models;
 
 use App\Observers\Tenant\TenantObserver;
 use App\Scopes\Tenant\TenantScope;
-//use App\Tenant\Traits\TenantTrait;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Webpatser\Uuid\Uuid;
 
 class Menu extends Model
 {
-    //use TenantTrait;
 
     protected $fillable = ['tenant_id','user_id','description','active','uui','url','slug'];
 
@@ -25,7 +23,7 @@ class Menu extends Model
         self::creating(function($model){
             $model->uuid = (string) Uuid::generate(4);
             $model->slug = (string) Str::slug($model->url,'_');
-            $model->url = (string) self::gerarUrl($model->url);
+            $model->url  = (string) self::gerarUrl($model->url);
         });
     }
 

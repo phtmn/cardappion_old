@@ -3,7 +3,7 @@
 namespace App\Models;
 
 
-//use App\Tenant\Traits\TenantTrait;
+
 use App\Observers\Tenant\TenantObserver;
 use App\Scopes\Tenant\TenantScope;
 use Illuminate\Database\Eloquent\Model;
@@ -13,9 +13,8 @@ use Webpatser\Uuid\Uuid;
 
 class Promotion extends Model
 {
-    //use TenantTrait;
 
-    protected $fillable = ['description','start_date','end_date','img','promotion_value','tenant_id','uui','url'];
+    protected $fillable = ['description','start_date','end_date','img','promotion_value','tenant_id','uui','url','slug'];
 
     public static function boot()
     {
