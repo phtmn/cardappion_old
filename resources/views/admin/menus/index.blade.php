@@ -23,7 +23,7 @@
 
 @section('conteudo')
     @include('tools.messages')
-    <div class="card">
+    <div class="card card-dark card-outline">
         <div class="card-header">
             <h4 class="card-title">Seus Menus ({{$data->count()}})</h4>
         </div>

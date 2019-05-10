@@ -11,7 +11,7 @@
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             {{--<li class="breadcrumb-item"><a href="{{route('dashboard.index')}}">Cardappon</a></li>--}}
-                            <li class="breadcrumb-item active"><i class="text-success fa fa-cog nav-icon"></i> Perfil   </li>
+                            <li class="breadcrumb-item active"><i class="text-dark fa fa-cog nav-icon"></i> Perfil   </li>
                         </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -27,7 +27,7 @@
     @csrf
     <div class="row">
         <div class="col-md-12">
-            <div class="card card-success card-outline">
+            <div class="card card-dark card-outline">
                 <div class="card-header">
                     <h4 class="card-title"><b class=""> Dados do Estabelecimento </b></h4>
                 </div>
@@ -35,7 +35,7 @@
 
 
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Nome <b class="text-purple" data-toggle="tooltip" data-placement="right" title="Dados obrigatórios"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">Nome <b class="text-dark" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
                             <div class="col-sm-6">
                                 <input type="text" name="store_name" class="form-control">
                             </div>
@@ -47,67 +47,67 @@
                             </div>
                 </div>
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">CEP <b class="text-success" data-toggle="tooltip" data-placement="right" title="Dados obrigatórios"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">CEP <b class="text-dark" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
                             <div class="col-sm-2">
                                 <input type="text" name="store_name" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Rua/Logradouro <b class="text-primary" data-toggle="tooltip" data-placement="right" title="Dados obrigatórios"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">Endereço <b class="text-dark" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
                             <div class="col-sm-6">
                                 <input type="text" name="store_name" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Bairro <b class="text-primary" data-toggle="tooltip" data-placement="right" title="Dados obrigatórios"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">Bairro <b class="text-dark" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
                             <div class="col-sm-4">
                                 <input type="text" name="store_name" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Número <b class="text-primary" data-toggle="tooltip" data-placement="right" title="Dados obrigatórios"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">Número <b class="text-dark" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
                             <div class="col-sm-1">
                                 <input type="text" name="store_name" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Cidade <b class="text-primary" data-toggle="tooltip" data-placement="right" title="Dados obrigatórios"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">Cidade <b class="text-dark" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
                             <div class="col-sm-4">
                                 <input type="text" name="store_name" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Estado <b class="text-primary" data-toggle="tooltip" data-placement="right" title="Dados obrigatórios"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">Estado <b class="text-dark" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
                             <div class="col-sm-1">
                                 <input type="text" name="store_name" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Telefone <b class="text-primary" data-toggle="tooltip" data-placement="right" title="Dados obrigatórios"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">Telefone <b class="text-dark" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
                             <div class="col-sm-2">
                                 <input type="text" name="store_name" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right"> WhatsApp <b class="text-primary" data-toggle="tooltip" data-placement="right" title="Dados obrigatórios"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right"> WhatsApp </label>
                             <div class="col-sm-2">
                                 <input type="text" name="store_name" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Site <b class="text-primary" data-toggle="tooltip" data-placement="right" title="Dados obrigatórios"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">Site </label>
                             <div class="col-sm-4">
                                 <input type="text" name="store_name" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Fan Page <b class="text-primary" data-toggle="tooltip" data-placement="right" title="Dados obrigatórios"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">Fan Page </label>
                             <div class="col-sm-4">
                                 <input type="text" name="store_name" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Instagram <b class="text-primary" data-toggle="tooltip" data-placement="right" title="Dados obrigatórios"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">Instagram </label>
                             <div class="col-sm-4">
                                 <input type="text" name="store_name" class="form-control">
                             </div>
@@ -131,9 +131,22 @@
                             <option value="Delivery">Delivery</option>
                         </select>
                     </div>
-                                  
+                    
+                    <div class="form-group row">
+                        
+                            <div class="col-sm-4">
+                                
+                            </div>
+                            <div class="col-sm-4">
+                            <button type="submit" class="btn btn-block btn-outline-success btn-lg btn-round"> <i class=" fa fa-check-square nav-icon"></i> Salvar</button>
+                            </div>
+                            <div class="col-sm-4">
+                                
+                            </div>
+                            
+                </div>
 
-                    <button type="submit" class="btn btn-block btn-success btn-lg btn-round"> Salvar Dados</button>
+                    
                 </div>
             </div>
         </div>            

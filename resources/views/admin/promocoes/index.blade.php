@@ -6,12 +6,12 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <a data-toggle="modal" data-target="#myModal" class="btn btn-outline-primary"> Nova Promoção +</a>
+                        <a data-toggle="modal" data-target="#myModal" class="btn btn-outline-secondary"> <i class="text-dark fa fa-plus nav-icon"></i> Oferta </a>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="{{route('dashboard.index')}}">Voltar para Dashboard</a></li>
-                            <li class="breadcrumb-item active">Cadastrar Promoção</li>
+                           
+                            <li class="breadcrumb-item active"><i class="text-dark fa fa-bullhorn nav-icon"></i> Ofertas</li>
                         </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -22,9 +22,9 @@
 
 @section('conteudo')
 
-<div class="card">
+<div class="card card-dark card-outline">
     <div class="card-header">
-        <h4 class="card-title">Suas Promoções</h4>
+        <h4 class="card-title">Ofertas Cadastradas</h4>
     </div>
     <div class="card-body">
        <div class="table-responsive">
