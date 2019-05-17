@@ -30,7 +30,7 @@ class Menu extends Model
 
     public function products(){
 
-        return $this->belongsToMany(Product::class);
+        return $this->hasMany(Product::class);
     }
 
     public static function gerarUrl($string){

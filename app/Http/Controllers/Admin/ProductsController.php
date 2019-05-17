@@ -26,11 +26,13 @@ class ProductsController extends Controller
     public function store(Request $request){
 
         try{
-            $product = Product::create($request->all());
+            $product = $request->all();
 
-            $menu = Menu::find($request->menu_id);
+            if($request->hasFile('img')){
+                $product['image'] = $request->img->store('products','public');
+            }
 
-            $product->menus()->attach($menu->id);
+            Product::create($product);
 
             return redirect()->back()->with('msg','Produto Inserido Com Sucesso!');
         }catch (\Exception $e){

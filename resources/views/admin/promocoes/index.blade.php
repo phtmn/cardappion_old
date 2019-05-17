@@ -6,7 +6,7 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <a data-toggle="modal" data-target="#myModal" class="btn btn-outline-secondary"> <i class="text-dark fa fa-plus nav-icon"></i> Oferta </a>
+                        <a href="{{route('promotions.create')}}" class="btn btn-outline-secondary"> <i class="text-dark fa fa-plus nav-icon"></i> Oferta </a>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">

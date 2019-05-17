@@ -14,7 +14,10 @@ use Webpatser\Uuid\Uuid;
 class Promotion extends Model
 {
 
-    protected $fillable = ['description','start_date','end_date','img','promotion_value','tenant_id','uui','url','slug'];
+    protected $fillable = [
+        'title',
+        ''
+    ];
 
     public static function boot()
     {

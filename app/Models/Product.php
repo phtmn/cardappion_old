@@ -9,11 +9,15 @@ class Product extends Model
 {
     use TenantTrait;
 
-    protected $fillable = ['tenant_id','description','price','image','details','active'];
+    protected $fillable = ['tenant_id','menu_id','description','price','image','details','active'];
 
 
-    public function menus(){
+    public function menu(){
 
-        return $this->belongsToMany(Menu::class);
+        return $this->belongsTo(Menu::class);
     }
+
+
+
+
 }

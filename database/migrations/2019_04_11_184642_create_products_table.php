@@ -16,12 +16,14 @@ class CreateProductsTable extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('tenant_id');
+            $table->unsignedBigInteger('menu_id');
             $table->string('description');
             $table->decimal('price',10,2);
             $table->string('image')->nullable();
             $table->text('details')->nullable();
             $table->boolean('active');
             $table->foreign('tenant_id')->references('id')->on('tenants');
+            $table->foreign('menu_id')->references('id')->on('menus');
             $table->softDeletes();
             $table->timestamps();
         });

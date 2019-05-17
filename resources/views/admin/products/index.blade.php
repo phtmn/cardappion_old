@@ -43,7 +43,7 @@
                             <td>{{$d->id}}</td>
                             <td>{{$d->description}}</td>
                             <td>{{ $d->price}}</td>
-                            <td><i>em desenvolvimento</i></td>
+                            <td><img src="{{Storage::url($d->image)}}" style="height: 70px;" alt=""/></td>
                         </tr>
                     @empty
                         <p>Nenhuma promoção cadastrada</p>

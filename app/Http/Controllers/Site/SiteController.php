@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Site;
 
 use App\Models\Menu;
+use App\Models\Product;
 use App\Models\Promotion;
 use App\Http\Controllers\Controller;
 
@@ -22,5 +23,10 @@ class SiteController extends Controller
         $menu = Menu::where('slug','=',$slug)->first();
         return view('client.menu',compact('menu'));
 
+    }
+
+    public function productDetail($id){
+        $product = Product::find($id);
+        return view('client.productDetail',compact('product'));
     }
 }

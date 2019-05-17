@@ -14,7 +14,8 @@
 Route::get('/','Site\SiteController@home')->name('site');
 
 Route::get('/promo/{slug}', 'Site\SiteController@promocao');
-Route::get('/menu/{slug}', 'Site\SiteController@menu');
+Route::get('/menu/{slug}', 'Site\SiteController@menu')->name('menu.slug');
+Route::get('/menu/product/{id}', 'Site\SiteController@productDetail')->name('product.detail');
 
 Auth::routes();
 

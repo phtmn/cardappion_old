@@ -15,19 +15,18 @@ class CreatePromotionsTable extends Migration
     {
         Schema::create('promotions', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('description');
-            $table->string('slug');
-            $table->uuid('uuid');
-            $table->string('url');
-            $table->dateTime('start_date');
-            $table->dateTime('end_date');
-            $table->decimal('promotion_value',10,2);
-            $table->text('img')->nullable();
             $table->unsignedBigInteger('tenant_id');
-            $table->unsignedBigInteger('user_id');
+
+            $table->string('title');
+            $table->uuid('uuid');
+            $table->string('slug',100)->nullable();
+            $table->string('url')->nullable();
+            $table->string('promotion_value');
+            $table->date('expiration_date');
+            $table->date('details')->nullable();
+            $table->boolean('active')->default(1);
 
             $table->foreign('tenant_id')->references('id')->on('tenants')->onDelete('cascade');
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 
             $table->softDeletes();
             $table->timestamps();

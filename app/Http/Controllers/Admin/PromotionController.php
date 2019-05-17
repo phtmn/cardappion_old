@@ -15,6 +15,9 @@ class PromotionController extends Controller
         ]);
     }
 
+    public function create(){
+        return view('admin.promocoes.create');
+    }
 
     public function qrCode($id){
 

@@ -23,7 +23,7 @@
 @section('conteudo')
     @include('tools.messages')
     <div class="card">
-        <form action="{{route('products.store')}}" method="POST">
+        <form action="{{route('products.store')}}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="card-header">
                 <h4 class="card-title">Novo Item</h4>
@@ -42,7 +42,7 @@
 
                 <div class="form-group">
                     <label for="" class="text-primary">Clique para adicionar imagem destaque</label>
-                    <input type="file" name="image" class="form-control">
+                    <input type="file" name="img" class="form-control">
                 </div>
 
                 <div class="form-group">
