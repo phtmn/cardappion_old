@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Models\Promotion;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Str;
 
 class PromotionController extends Controller
 {
@@ -28,8 +29,20 @@ class PromotionController extends Controller
 
     public function store(Request $request){
 
-        $request->user()->promotions()
-                        ->create($request->all());
+        try{
+            $promotion          = $request->all();
+            $promotion['url']   = Str::random(5);
+
+            if($request->hasFile('image')){
+                $promotion['image'] = $request->image->store('promotions');
+            }
+
+            Promotion::create($promotion);
+
+            return redirect()->back()->with('msg','Produto Inserido Com Sucesso!');
+        }catch (\Exception $e){
+            return redirect()->back()->with('error','Ocorreu um Erro: '.$e->getMessage());
+        }
 
         return redirect()->route('promotions.index');
     }

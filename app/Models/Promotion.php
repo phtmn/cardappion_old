@@ -2,13 +2,10 @@
 
 namespace App\Models;
 
-
-
 use App\Observers\Tenant\TenantObserver;
 use App\Scopes\Tenant\TenantScope;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Str;
-use Webpatser\Uuid\Uuid;
+
 
 
 class Promotion extends Model
@@ -16,7 +13,13 @@ class Promotion extends Model
 
     protected $fillable = [
         'title',
-        ''
+        'details',
+        'slug',
+        'url',
+        'promotion_value',
+        'expiration_date',
+        'image',
+        'active'
     ];
 
     public static function boot()
@@ -25,27 +28,16 @@ class Promotion extends Model
 
         self::addGlobalScope(new TenantScope);
         static::observe(new TenantObserver);
-
-        self::creating(function($model){
-            $model->uuid = (string) Uuid::generate(4);
-            $model->slug = (string) Str::slug($model->description,'_');
-            $model->url = (string) self::gerarUrl($model->description);
-        });
     }
 
     public function user() {
         return $this->belongsTo(User::class);
     }
 
-    public static function gerarUrl($string){
-
-        $baseUrl = env('APP_URL').'/promo/';
-
-        $slug = Str::slug($string,'_');
-
-        $url = $baseUrl.$slug;
-
-        return $url;
+    public function tenant() {
+        return $this->belongsTo(Tenant::class);
     }
+
+
 
 }

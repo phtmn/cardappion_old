@@ -37,6 +37,7 @@
                         <div class="img">
                             <label class="text-primary"> Foto de Destaque</label>
                             <input type="file" id="input-file-now" name="image" class="dropify img-thumbnail" />
+{{--                            <input type="file" name="image" class="form-control">--}}
                         </div>
 
                         <div class="form-group">
@@ -50,7 +51,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon3">https://cardappon.com.br/promo/</span>
                                 </div>
-                                <input type="text" class="form-control" name="url" id="basic-url" aria-describedby="basic-addon3">
+                                <input type="text" value="premium members only"class="form-control" name="url" id="basic-url" aria-describedby="basic-addon3" disabled>
                             </div>
                         </div>
 

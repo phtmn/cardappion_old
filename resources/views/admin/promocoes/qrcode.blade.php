@@ -13,9 +13,9 @@
 <div class="visible-print text-center">
 
     <p>Clique no link para testar em ambiente de desenvolvimento:</p>
-    <a href="{{ $promocao->url }}">{{ $promocao->description }}</a>
+    <a href="{{ env('APP_URL').'/promo/'.$promocao->url }}">{{ $promocao->title }}</a>
 
-    {!! QrCode::size(400)->generate($promocao->url); !!}
+    {!! QrCode::size(400)->generate(env('APP_URL').'/promo/'.$promocao->url); !!}
 
 </div>
 </body>

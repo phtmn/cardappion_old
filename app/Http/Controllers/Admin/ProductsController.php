@@ -29,7 +29,7 @@ class ProductsController extends Controller
             $product = $request->all();
 
             if($request->hasFile('img')){
-                $product['image'] = $request->img->store('products','public');
+                $product['image'] = $request->img->store('products');
             }
 
             Product::create($product);

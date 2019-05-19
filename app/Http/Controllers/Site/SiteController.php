@@ -14,7 +14,9 @@ class SiteController extends Controller
     }
 
     public function promocao($slug){
-        $promotion = Promotion::where('slug','=',$slug)->first();
+
+        $promotion = Promotion::where('url','=',$slug)->first();
+        //dd($promotion);
         return view('client.promotion', compact('promotion'));
     }
 

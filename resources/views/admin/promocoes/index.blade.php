@@ -30,28 +30,28 @@
        <div class="table-responsive">
            <table class="table">
                <thead class="text-dark">
-                    <th>ID</th>
+                    <th>#</th>
                     <th>Título </th>
                     <th>Valor (R$)</th>
-                    <th>Link</th>
                     <th class="text-danger">Validade</th>
-                    <th>#</th>
+                    <th>Link</th>
+                    <th>Ações</th>
                </thead>
                <tbody>
                     @forelse($data as $d)
                         <tr>
-                            <td>{{$d->id}}</td>
-                            <td>{{$d->description}}</td>
-                            <td>{{$d->description}}</td>
+                            <td><img src="{{Storage::url($d->image)}}" style="height: 70px;" alt=""/></td>
+                            <td>{{$d->title}}</td>
                             <td>R$ {{ number_format($d->promotion_value,2,',','.') }}</td>
-                            <td>{{ date('d/m/Y',strtotime($d->start_date))}} Até {{date('d/m/Y',strtotime($d->end_date))}}</td>
+                            <td>{{ date('d/m/Y',strtotime($d->expiration_date))}}</td>
+                            <td><a href="{{ route('promo',$d->url)  }}" target="_blank">cardappon.com.br/promo/{{ $d->url }}</a></td>
                             <td>
-                                <a href="{{route('promotion.qrCode',$d->id)}}" class="btn btn-success btn-round">Compartilhar</a>
+                                <a href="#" data-toogle="tooltip" title="Copiar link | implementar função com js" class="btn btn-primary btn-sm"><i class="fa fa-copy"></i></a>
+                                <a href="{{route('promotion.qrCode',$d->id)}}" class="btn btn-success btn-sm"><i class="fa fa-qrcode"></i></a>
                             </td>
                         </tr>
                     @empty
                         <p class="text-danger">Nenhuma promoção cadastrada</p>
-
                     @endforelse
                </tbody>
            </table>

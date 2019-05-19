@@ -15,6 +15,5 @@ class ManagerTenant
     public function getTenantIdentify(){
 
         return auth()->user()->tenant->id;
-
     }
 }

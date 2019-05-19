@@ -17,17 +17,26 @@
     <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
     <link href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" rel="stylesheet">
 
-
 </head>
 <body>
 <ion-app>
     <ion-header>
         <ion-toolbar color="primary">
-            <ion-title>{{$promotion->description}}</ion-title>
+            <ion-title>Uma oferta de: {{ $promotion->tenant->name ?? 'CardappONf'}}</ion-title>
         </ion-toolbar>
     </ion-header>
     <ion-content>
+        <ion-card>
+            <img src="{{Storage::url($promotion->image)}}"/>
+            <ion-card-header>
+                <ion-card-title>{{ $promotion->title }}</ion-card-title>
+                <ion-card-subtitle>oferta válida até: {{ date('d/m/Y',strtotime($promotion->expiration_date)) }}</ion-card-subtitle>
+            </ion-card-header>
 
+            <ion-card-content>
+                {{ $promotion->details ?? '' }}
+            </ion-card-content>
+        </ion-card>
     </ion-content>
 
 </ion-app>
