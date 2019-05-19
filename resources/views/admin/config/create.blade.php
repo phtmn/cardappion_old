@@ -115,25 +115,32 @@
                 
                 <div class="form-group row">
                         <label for="" class="col-sm-3 col-form-label text-right">Segmento... ramo de atuação.. ou categoria <b class="text-primary" data-toggle="tooltip" data-placement="right" title="Dados obrigatórios"> * </b></label>
-                            <div class="col-sm-9">
-                                <input type="text" name="store_name" class="form-control">
+                            <div class="col-sm-9">                               
+                                <input type="checkbox" id="" name="">
+                                <label for="horns">Bar</label>
+                                <br>
+                                <input type="checkbox" id="" name="">
+                                <label for="horns">Restaurante</label>
+                                <br>
+                                <input type="checkbox" id="" name="">
+                                <label for="horns">Lanchonete</label>
+                                <br>
+                                <input type="checkbox" id="" name="">
+                                <label for="horns">Food Truck</label>
+                                <br>
+                                <input type="checkbox" id="" name="">
+                                <label for="horns">Delivery</label>
+                                <br>
+                                <input type="checkbox" id="" name="">
+                                <label for="horns">Outra</label>
                             </div>
                 </div>
 
                     
-                    <div class="form-group">
-                        <label for="category">Categoria</label>
-                        <select name="category" id="" class="form-control">
-                            <option value="Restaurante">Restaurante</option>
-                            <option value="Lanchonete">Lanchonete</option>
-                            <option value="Marmitaria">Marmitaria</option>
-                            <option value="FoodTruck">FoodTruck</option>
-                            <option value="Delivery">Delivery</option>
-                        </select>
-                    </div>
+                <hr>
                     
                     <div class="form-group row">
-                        
+                     
                             <div class="col-sm-4">
                                 
                             </div>

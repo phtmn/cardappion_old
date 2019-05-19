@@ -22,7 +22,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="{{route('menus.index')}}" class="nav-link">
-                        <i class="text-home fa fa-qrcode nav-icon"></i>
+                        <i class="text-home fa fa-book nav-icon"></i>
                         <p>Menus</p>
                     </a>
                 </li>
