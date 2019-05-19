@@ -1,36 +1,42 @@
 @extends('layouts.app')
 
+
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-10">
-            <div class="card">
-                <div class="card-header ">Cadastre seu negócio aqui</div>
+            <div class="card ">
+                <div class="card-header text-danger"><b>Cadastre-se aqui</b></div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
+                        <div class="form-group row"> 
+                            <label for="tenant" class="col-md-4 col-form-label text-md-right  text-dark">{{ __('Nome do Estabelecimento') }}</label> 
+                            <div class="input-group-append">
+              <span class="fa fa-institution  input-group-text"></span>
+          </div>
+                            <div class="col-md-6"> 
+                              <input id="tenant" type="text" class="form-control{{ $errors->has('tenant') ? ' is-invalid' : '' }}" name="tenant" value="{{ old('tenant') }}" required autofocus>
+
+                              @if ($errors->has('tenant')) 
+                              <span class="invalid-feedback" role="alert"> 
+                              <strong>{{ $errors->first('tenant') }}</strong> 
+                              </span> 
+                                @endif 
+                              </div> 
+                              </div> 
+
                         <div class="form-group row">
-                            <label for="tenant" class="col-md-4 col-form-label text-md-right">{{ __('Empresa') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="tenant" type="text" class="form-control{{ $errors->has('tenant') ? ' is-invalid' : '' }}" name="tenant" value="{{ old('tenant') }}" required autofocus>
-
-                                @if ($errors->has('tenant'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('tenant') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nome do Responsável') }}</label>
-
+                            <label for="name" class="col-md-4 col-form-label text-md-right  text-dark">{{ __('Nome do Responsável') }}</label>
+                            <div class="input-group-append">
+              <span class="fa fa-user input-group-text"></span>
+          </div>
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
-
+                                
                                 @if ($errors->has('name'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('name') }}</strong>
@@ -40,8 +46,10 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-mail') }}</label>
-
+                            <label for="email" class="col-md-4 col-form-label text-md-right  text-dark">{{ __('E-mail') }}</label>
+                            <div class="input-group-append">
+              <span class="fa fa-envelope input-group-text"></span>
+          </div>
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
 
@@ -54,8 +62,10 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Senha') }}</label>
-
+                            <label for="password" class="col-md-4 col-form-label text-md-right  text-dark">{{ __('Senha') }}</label>
+                            <div class="input-group-append">
+              <span class="fa fa-lock input-group-text"></span>
+          </div>
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
 
@@ -68,8 +78,10 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Repita Senha') }}</label>
-
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right  text-dark">{{ __('Repita Senha') }}</label>
+                            <div class="input-group-append">
+              <span class="fa fa-lock input-group-text"></span>
+          </div>
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
@@ -77,8 +89,8 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-outline-danger">
-                                    {{ __('Enviar') }}
+                                <button type="submit" class="btn btn-secondary">
+                                    {{ __('Cadastrar') }}
                                 </button>
                             </div>
                         </div>

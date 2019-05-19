@@ -6,12 +6,12 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <a href="{{route('promotions.create')}}" class="btn btn-outline-secondary"> <i class="text-dark fa fa-plus nav-icon"></i> Oferta </a>
+                        <a href="{{route('promotions.create')}}" class="btn btn-success"> <i class=" fa fa-plus nav-icon"></i> Oferta </a>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                            
-                            <li class="breadcrumb-item active"><i class="text-dark fa fa-bullhorn nav-icon"></i> Ofertas</li>
+                            <li class="breadcrumb-item active"><i class="text-primary fa fa-bullhorn nav-icon"></i> Ofertas</li>
                         </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -22,24 +22,26 @@
 
 @section('conteudo')
 
-<div class="card card-dark card-outline">
+<div class="card card-warning card-outline">
     <div class="card-header">
         <h4 class="card-title">Ofertas Cadastradas</h4>
     </div>
     <div class="card-body">
        <div class="table-responsive">
            <table class="table">
-               <thead class="text-primary">
-                    <th>Codigo</th>
-                    <th>Nome da Promoção</th>
-                    <th>Valor Promocional</th>
-                    <th>Período de validade</th>
-                    <th> Opções</th>
+               <thead class="text-dark">
+                    <th>ID</th>
+                    <th>Título </th>
+                    <th>Valor (R$)</th>
+                    <th>Link</th>
+                    <th class="text-danger">Validade</th>
+                    <th>#</th>
                </thead>
                <tbody>
                     @forelse($data as $d)
                         <tr>
                             <td>{{$d->id}}</td>
+                            <td>{{$d->description}}</td>
                             <td>{{$d->description}}</td>
                             <td>R$ {{ number_format($d->promotion_value,2,',','.') }}</td>
                             <td>{{ date('d/m/Y',strtotime($d->start_date))}} Até {{date('d/m/Y',strtotime($d->end_date))}}</td>
@@ -48,7 +50,7 @@
                             </td>
                         </tr>
                     @empty
-                        <p>Nenhuma promoção cadastrada</p>
+                        <p class="text-danger">Nenhuma promoção cadastrada</p>
 
                     @endforelse
                </tbody>

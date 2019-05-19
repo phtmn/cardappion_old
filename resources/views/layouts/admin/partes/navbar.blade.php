@@ -6,7 +6,7 @@
         </li>
         
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="#" class="nav-link"><i class=" fa fa-whatsapp nav-icon"></i> Suporte</a>
+            <a href="#" class="nav-link"><i class="text-success fa fa-whatsapp nav-icon"></i> Suporte</a>
         </li>
     </ul>
 

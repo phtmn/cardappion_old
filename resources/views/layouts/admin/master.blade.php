@@ -29,9 +29,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
         <a href="{{route('dashboard.index')}}" class="brand-link">
-            <img src="{{asset('vendor/home/images/logo.jpg')}}" alt="AdminLTE Logo" class="brand-image">
+            <img src="{{asset('vendor/home/images/logoadmin.jpg')}}" alt="AdminLTE Logo" class="brand-image">
                  
-            <span class="brand-text font-weight-light">|</span>
+            <span class="brand-text font-weight-light"><b>cardAppOn</b></span>
         </a>
 
         <!-- Sidebar -->
@@ -75,10 +75,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <footer class="main-footer">
         <!-- To the right -->
         <div class="float-right d-none d-sm-inline">
-            Anything you want
+        <strong> Todos os cardápios e promoções em um único lugar
         </div>
+        
         <!-- Default to the left -->
-        <strong>Copyright &copy; 2014-2018 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+        <strong> Soluções em Cardápios Digitais
     </footer>
 </div>
 <!-- ./wrapper -->

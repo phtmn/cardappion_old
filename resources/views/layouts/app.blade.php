@@ -7,25 +7,24 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>CardAppOn - Administração</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="{{asset('vendor/plugins/font-awesome/css/font-awesome.min.css')}}">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="{{asset('vendor/dist/css/adminlte.css')}}">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-<body>
+<body class="hold-transition register-page bg-black">
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-laravel">
             <div class="container">
                 <a class="navbar-brand " href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                <img src="{{asset('vendor/home/images/logo.jpg')}}" alt="AdminLTE Logo" class="brand-image">
                 </a>
+
+                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -41,11 +40,11 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link " href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link  text-white" href="{{ route('login') }}">{{ __('ENTRAR') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link " href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link  text-white" href="{{ route('register') }}">{{ __('CADASTRE-SE') }}</a>
                                 </li>
                             @endif
                         @else

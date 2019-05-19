@@ -11,7 +11,7 @@
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             {{--<li class="breadcrumb-item"><a href="{{route('dashboard.index')}}">Cardappon</a></li>--}}
-                            <li class="breadcrumb-item active"><i class="text-dark fa fa-cog nav-icon"></i> Perfil   </li>
+                            <li class="breadcrumb-item active"><i class="text-primary fa fa-cog nav-icon"></i> Perfil   </li>
                         </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -27,7 +27,7 @@
     @csrf
     <div class="row">
         <div class="col-md-12">
-            <div class="card card-dark card-outline">
+            <div class="card card-warning card-outline">
                 <div class="card-header">
                     <h4 class="card-title"><b class=""> Dados do Estabelecimento </b></h4>
                 </div>
@@ -35,7 +35,7 @@
 
 
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Nome <b class="text-dark" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">Nome <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
                             <div class="col-sm-6">
                                 <input type="text" name="store_name" class="form-control">
                             </div>
@@ -47,43 +47,43 @@
                             </div>
                 </div>
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">CEP <b class="text-dark" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">CEP <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
                             <div class="col-sm-2">
                                 <input type="text" name="store_name" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Endereço <b class="text-dark" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">Endereço <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
                             <div class="col-sm-6">
                                 <input type="text" name="store_name" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Bairro <b class="text-dark" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">Bairro <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
                             <div class="col-sm-4">
                                 <input type="text" name="store_name" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Número <b class="text-dark" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">Número <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
                             <div class="col-sm-1">
                                 <input type="text" name="store_name" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Cidade <b class="text-dark" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">Cidade <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
                             <div class="col-sm-4">
                                 <input type="text" name="store_name" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Estado <b class="text-dark" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">Estado <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
                             <div class="col-sm-1">
                                 <input type="text" name="store_name" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Telefone <b class="text-dark" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">Telefone <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
                             <div class="col-sm-2">
                                 <input type="text" name="store_name" class="form-control">
                             </div>
@@ -114,7 +114,7 @@
                 </div>                
                 
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Segmento... ramo de atuação.. ou categoria <b class="text-primary" data-toggle="tooltip" data-placement="right" title="Dados obrigatórios"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">Segmento <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Dados obrigatórios"> * </b></label>
                             <div class="col-sm-9">                               
                                 <input type="checkbox" id="" name="">
                                 <label for="horns">Bar</label>
