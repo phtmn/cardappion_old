@@ -21,7 +21,7 @@ class CreatePromotionsTable extends Migration
             $table->text('details')->nullable();
             $table->string('slug',100)->nullable();
             $table->string('url')->nullable()->unique();
-            $table->string('promotion_value')->nullable();
+            $table->decimal('promotion_value',10,2)->nullable();
             $table->date('expiration_date')->nullable();
             $table->string('image')->nullable();
             $table->boolean('active')->default(1);

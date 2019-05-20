@@ -42,8 +42,8 @@
                         <tr>
                             <td><img src="{{Storage::url($d->image)}}" style="height: 70px;" alt=""/></td>
                             <td>{{$d->title}}</td>
-                            <td>R$ {{ number_format($d->promotion_value,2,',','.') }}</td>
-                            <td>{{ $d->expiration_date }}</td>
+                            <td>R$ {{  $d->promotion_value ?? 0 }}</td>
+                            <td>{{ date('d/m/Y',strtotime($d->expiration_date))}}</td>
                             <td><a href="{{ route('promo',$d->url)  }}" target="_blank">cardappon.com.br/promo/{{ $d->url }}</a></td>
                             <td>
                                 <a href="#" data-toogle="tooltip" title="Copiar link | implementar função com js" class="btn btn-primary btn-sm"><i class="fa fa-copy"></i></a>
