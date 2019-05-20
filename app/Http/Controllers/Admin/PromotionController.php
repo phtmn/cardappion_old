@@ -22,7 +22,7 @@ class PromotionController extends Controller
 
     public function qrCode($id){
 
-        $promocao = Promotion::find($id);
+        $promocao = Promotion::findOrFail($id);
 
         return view('admin.promocoes.qrcode',compact('promocao'));
     }
@@ -39,11 +39,10 @@ class PromotionController extends Controller
 
             Promotion::create($promotion);
 
-            return redirect()->back()->with('msg','Produto Inserido Com Sucesso!');
+            return redirect()->route('promotions.index')->with('msg','Oferta Inserida Com Sucesso!');
         }catch (\Exception $e){
             return redirect()->back()->with('error','Ocorreu um Erro: '.$e->getMessage());
         }
 
-        return redirect()->route('promotions.index');
     }
 }
