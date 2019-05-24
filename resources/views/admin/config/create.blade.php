@@ -37,123 +37,91 @@
                 <div class="form-group row">
                         <label for="" class="col-sm-3 col-form-label text-right">Nome <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
                             <div class="col-sm-6">
-                                <input type="text" name="store_name" class="form-control">
+                                <input type="text" name="nome" class="form-control">
                             </div>
                 </div>               
                 <div class="form-group row">
                         <label for="" class="col-sm-3 col-form-label text-right">CNPJ </label>
                             <div class="col-sm-3">
-                                <input type="text" name="store_name" class="form-control">
+                                <input type="text" name="cnpj" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
                         <label for="" class="col-sm-3 col-form-label text-right">CEP <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
                             <div class="col-sm-2">
-                                <input type="text" name="store_name" class="form-control">
+                                <input type="text" name="cep" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Endereço <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">Endereço </label>
                             <div class="col-sm-6">
-                                <input type="text" name="store_name" class="form-control">
+                                <input type="text" name="endereco" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Bairro <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">Bairro </label>
                             <div class="col-sm-4">
-                                <input type="text" name="store_name" class="form-control">
+                                <input type="text" name="bairro" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Número <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">Número </label>
                             <div class="col-sm-1">
-                                <input type="text" name="store_name" class="form-control">
+                                <input type="text" name="numero" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Cidade <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">Cidade </label>
                             <div class="col-sm-4">
-                                <input type="text" name="store_name" class="form-control">
+                                <input type="text" name="cidade" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Estado <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">Estado </label>
                             <div class="col-sm-1">
-                                <input type="text" name="store_name" class="form-control">
+                                <input type="text" name="estado" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Telefone <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
+                        <label for="" class="col-sm-3 col-form-label text-right">Telefone </label>
                             <div class="col-sm-2">
-                                <input type="text" name="store_name" class="form-control">
+                                <input type="text" name="telefone" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
                         <label for="" class="col-sm-3 col-form-label text-right"> WhatsApp </label>
                             <div class="col-sm-2">
-                                <input type="text" name="store_name" class="form-control">
+                                <input type="text" name="whatsapp" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
                         <label for="" class="col-sm-3 col-form-label text-right">Site </label>
                             <div class="col-sm-4">
-                                <input type="text" name="store_name" class="form-control">
+                                <input type="text" name="site" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
                         <label for="" class="col-sm-3 col-form-label text-right">Fan Page </label>
                             <div class="col-sm-4">
-                                <input type="text" name="store_name" class="form-control">
+                                <input type="text" name="fanpage" class="form-control">
                             </div>
                 </div>
                 <div class="form-group row">
                         <label for="" class="col-sm-3 col-form-label text-right">Instagram </label>
                             <div class="col-sm-4">
-                                <input type="text" name="store_name" class="form-control">
+                                <input type="text" name="instagram" class="form-control">
                             </div>
-                </div>                
-                
-                <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Segmento <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Dados obrigatórios"> * </b></label>
-                            <div class="col-sm-9">                               
-                                <input type="checkbox" id="" name="">
-                                <label for="horns">Bar</label>
-                                <br>
-                                <input type="checkbox" id="" name="">
-                                <label for="horns">Restaurante</label>
-                                <br>
-                                <input type="checkbox" id="" name="">
-                                <label for="horns">Lanchonete</label>
-                                <br>
-                                <input type="checkbox" id="" name="">
-                                <label for="horns">Food Truck</label>
-                                <br>
-                                <input type="checkbox" id="" name="">
-                                <label for="horns">Delivery</label>
-                                <br>
-                                <input type="checkbox" id="" name="">
-                                <label for="horns">Outra</label>
-                            </div>
-                </div>
-
-                    
-                <hr>
-                    
-                    <div class="form-group row">
-                     
-                            <div class="col-sm-4">
-                                
+                </div>                      
+                <hr>                    
+                    <div class="form-group row">                     
+                            <div class="col-sm-4">                                
                             </div>
                             <div class="col-sm-4">
                             <button type="submit" class="btn btn-block btn-outline-success btn-lg btn-round"> <i class=" fa fa-check-square nav-icon"></i> Salvar</button>
                             </div>
-                            <div class="col-sm-4">
-                                
-                            </div>
-                            
-                </div>
-
-                    
+                            <div class="col-sm-4">                                
+                            </div>                            
+                </div>                    
                 </div>
             </div>
         </div>            

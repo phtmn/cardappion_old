@@ -17,21 +17,20 @@ class CreateConfigsTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('tenant_id');
             $table->unsignedBigInteger('user_id');
-            $table->string('store_name');
-            $table->string('slogan')->nullable();
-            $table->string('description')->nullable();
-            $table->string('category');
-            $table->string('email')->nullable();
+            
+            $table->string('nome')->nullable();
+            $table->string('cnpj')->nullable();            
+            $table->string('cep')->nullable();
+            $table->string('endereco')->nullable();
+            $table->string('bairro')->nullable();
+            $table->string('numero')->nullable();
+            $table->string('cidade')->nullable();
+            $table->string('estado')->nullable();
+            $table->string('telefone')->nullable();
+            $table->boolean('whatsapp')->default(0);
             $table->string('site')->nullable();
-            $table->string('instagram')->nullable();
-            $table->string('facebook')->nullable();
-            $table->string('maps')->nullable();
-            $table->string('address')->nullable();
-            $table->string('city')->nullable();
-            $table->boolean('has_delivery')->default(0);
-            $table->string('delivery_phone')->nullable();
-            $table->string('banner')->nullable();
-            $table->string('logo')->nullable();
+            $table->string('fanpage')->nullable();
+            $table->string('instagram')->nullable();            
 
             $table->foreign('tenant_id')->references('id')->on('tenants');
             $table->foreign('user_id')->references('id')->on('users');

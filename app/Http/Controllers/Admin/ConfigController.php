@@ -27,27 +27,25 @@ class ConfigController extends Controller
         $config = Config::UpdateOrCreate(
             ['user_id' => auth()->user()->id],
             [
-                'store_name'    => $request->store_name,
-                'slogan'        => $request->slogan,
-                'description'   => $request->description,
-                'category'      => $request->category,
-                'email'         => $request->email,
-                'site'          => $request->site,
-                'instagram'     => $request->instagram,
-                'facebook'      => $request->facebook,
-                'maps'          => $request->maps,
-                'address'       => $request->address,
-                'city'          => $request->city,
-                'has_delivery'  => $request->has_delivery,
-                'delivery_phone'=> $request->delivery_phone,
-                'banner'        => $request->banner,
-                'logo'          => $request->logo,
-                'user_id'       => auth()->user()->id
+                'nome'      => $request->nome,
+                'cnpj'      => $request->cnpj,
+                'cep'       => $request->cep,
+                'endereco'  => $request->endereco,
+                'bairro'    => $request->bairro,
+                'numero'    => $request->numero,
+                'cidade'    => $request->cidade,
+                'estado'    => $request->estado,
+                'telefone'  => $request->telefone,
+                'whatsapp'  => $request->whatsapp,
+                'site'      => $request->site,
+                'fanpage'   => $request->fanpage,
+                'instagram' => $request->instagram,                
+                'user_id'   => auth()->user()->id
             ]
         );
 
         if($config){
-            return redirect()->route('dashboard.index')->with('msg','Seus dados foram atualizados');
+            return redirect()->route('dashboard.index')->with('msg','Dados armazenados com sucesso!');
         }
     }
 }
