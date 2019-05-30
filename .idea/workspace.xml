@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99e48060-c47b-49dc-ba43-e6d6be4d792e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/PromotionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PromotionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/menu.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,23 +49,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/PromotionController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-              <folding>
-                <element signature="e#46#71#0#PHP" expanded="true" />
-              </folding>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://81ab84f5-01e2-4194-9bdc-49fc1c73486b/schema/cardapion/table/users">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state projectRestartId="39c96ae0-e6d2-4fa8-8aa2-f9710cb1d5c0">
+              <filtering />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_11_230437_create_configs_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ConfigController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/filesystems.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="26" column="31" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="31" />
+              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="29" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/client/menu.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="509">
+              <caret line="104" column="23" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_11_184642_create_products_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -129,11 +172,11 @@
         <option value="$PROJECT_DIR$/database/migrations/2013_03_26_123718_create_tenants_table.php" />
         <option value="$PROJECT_DIR$/resources/views/client/promotion.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/client/productDetail.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/client/menu.blade.php" />
         <option value="$PROJECT_DIR$/config/filesystems.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_03_05_154402_create_promotions_table.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/promocoes/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/PromotionController.php" />
+        <option value="$PROJECT_DIR$/resources/views/client/menu.blade.php" />
       </list>
     </option>
   </component>
@@ -245,28 +288,20 @@
             <path>
               <item name="cardapion-admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="cardapion-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cardapion-admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="cardapion-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cardapion-admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="cardapion-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cardapion-admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cardapion-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -356,18 +391,22 @@
       <workItem from="1557932561152" duration="941000" />
       <workItem from="1558054052665" duration="952000" />
       <workItem from="1558285040171" duration="8114000" />
-      <workItem from="1558297200659" duration="4264000" />
+      <workItem from="1558297200659" duration="4771000" />
+      <workItem from="1558369415643" duration="65000" />
+      <workItem from="1558861847157" duration="799000" />
+      <workItem from="1558959964858" duration="1080000" />
+      <workItem from="1559219847490" duration="37000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101184000" />
+    <option name="totallyTimeSpent" value="103672000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="696" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2621212" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28030303" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -460,12 +499,8 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/storage/app/products/o41PQZfLFLAsfDQZyOp419QDyVPjqENM1HIPduRT.jpeg" />
     <entry file="file://$PROJECT_DIR$/storage/app/promotions/aX4dYl5WxTBmMJC8w1T4SkuuMAIIgbJ8aoWpHZjk.jpeg" />
     <entry file="file://$PROJECT_DIR$/storage/app/promotions/zP2pCGHxQnQnEag4ZYipNh5kZFNiq3tdTBEpmSvI.jpeg" />
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/storage/products/xpv58HYSOnOP3EJ4qsQF2bHRwEgzGqmawipSC4jn.jpeg" />
     <entry file="file://$PROJECT_DIR$/public/storage/products/3ARDxTJieKLZNWkyB5WXA1XPrTMthjSclNeknbyd.jpeg" />
     <entry file="file://$PROJECT_DIR$/public/storage/products/6CafEDOgGJUXjTODskPB83WhQ4BnX635OPTRQ7nT.jpeg" />
@@ -476,9 +511,7 @@
     <entry file="file://$PROJECT_DIR$/public/storage/products/vQZglTgA4c9oXYm0PJbEbVHpYLY7Uw1VF9isbCtw.jpeg" />
     <entry file="file://$PROJECT_DIR$/public/storage/products/oDFhhOuDBp0qc6vAiE6XbJ0MI6uiffutCOc6Cslu.jpeg" />
     <entry file="file://$PROJECT_DIR$/public/storage/products/KxJy8zvKVdPeMzQdaao4iTyVDXGy0vzINWTcetzf.jpeg" />
-    <entry file="file://$PROJECT_DIR$/storage/app/public/products/cXMQ4izlCxoA36tcvmEYGZMUFfhJPd4Eav1whO4P.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/products/cXMQ4izlCxoA36tcvmEYGZMUFfhJPd4Eav1whO4P.jpeg" />
     <entry file="file://$PROJECT_DIR$/app/Models/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-306">
@@ -502,16 +535,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Site/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
-          <folding>
-            <element signature="e#45#65#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/promocoes/qrcode.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -519,12 +542,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/public/promotions/AzZDJzB9E8RKvIXnMTSfZUC4FV1lm0u8WHuycAM4.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/public/promotions/Nfcj1PC9Ur2OgbvTFjCAS2K4xHkOpHU48pLaYlWH.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/promotions/AzZDJzB9E8RKvIXnMTSfZUC4FV1lm0u8WHuycAM4.jpeg" />
+    <entry file="file://$PROJECT_DIR$/storage/app/public/promotions/Nfcj1PC9Ur2OgbvTFjCAS2K4xHkOpHU48pLaYlWH.jpeg" />
     <entry file="das://81ab84f5-01e2-4194-9bdc-49fc1c73486b/schema/cardapion/table/promotions">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="517be67c-be23-41f3-95f6-95e3d26d1907">
@@ -548,13 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_11_230437_create_configs_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -566,13 +578,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
           <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/client/menu.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -590,28 +595,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://81ab84f5-01e2-4194-9bdc-49fc1c73486b/schema/cardapion/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="71f90f8a-08b6-4ca9-80c3-84d744d6f660">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/public/promotions/ZNwbO5HsvslBCE8zjDRro1R15eO1N44Kct7GJw2a.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/public/promotions/57r3tJHwsngZnfmvB6iIizAcI0kqi8g7ocEFGJrk.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/filesystems.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/promotions/ZNwbO5HsvslBCE8zjDRro1R15eO1N44Kct7GJw2a.jpeg" />
+    <entry file="file://$PROJECT_DIR$/storage/app/public/promotions/57r3tJHwsngZnfmvB6iIizAcI0kqi8g7ocEFGJrk.jpeg" />
     <entry file="file://$PROJECT_DIR$/storage/app/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -620,27 +605,13 @@
         <state relative-caret-position="-3486" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/storage/promotions/57r3tJHwsngZnfmvB6iIizAcI0kqi8g7ocEFGJrk.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/storage/promotions/AzZDJzB9E8RKvIXnMTSfZUC4FV1lm0u8WHuycAM4.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/storage/promotions/uK2LoihgBNpsGNZoYP3HFGwUA6K7GAHZLcb3jm83.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/storage/promotions/ZNwbO5HsvslBCE8zjDRro1R15eO1N44Kct7GJw2a.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/storage/promotions/Nfcj1PC9Ur2OgbvTFjCAS2K4xHkOpHU48pLaYlWH.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/storage/products/5tJTGaT5ElDDADtlMnZqU83scnaJu36L9DiyUUiK.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/storage/products/cXMQ4izlCxoA36tcvmEYGZMUFfhJPd4Eav1whO4P.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/storage/promotions/57r3tJHwsngZnfmvB6iIizAcI0kqi8g7ocEFGJrk.jpeg" />
+    <entry file="file://$PROJECT_DIR$/public/storage/promotions/AzZDJzB9E8RKvIXnMTSfZUC4FV1lm0u8WHuycAM4.jpeg" />
+    <entry file="file://$PROJECT_DIR$/public/storage/promotions/uK2LoihgBNpsGNZoYP3HFGwUA6K7GAHZLcb3jm83.jpeg" />
+    <entry file="file://$PROJECT_DIR$/public/storage/promotions/ZNwbO5HsvslBCE8zjDRro1R15eO1N44Kct7GJw2a.jpeg" />
+    <entry file="file://$PROJECT_DIR$/public/storage/promotions/Nfcj1PC9Ur2OgbvTFjCAS2K4xHkOpHU48pLaYlWH.jpeg" />
+    <entry file="file://$PROJECT_DIR$/public/storage/products/5tJTGaT5ElDDADtlMnZqU83scnaJu36L9DiyUUiK.jpeg" />
+    <entry file="file://$PROJECT_DIR$/public/storage/products/cXMQ4izlCxoA36tcvmEYGZMUFfhJPd4Eav1whO4P.jpeg" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_11_183101_create_menus_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -652,13 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_11_184642_create_products_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -674,6 +638,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Site/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+          <folding>
+            <element signature="e#45#65#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -683,11 +657,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/PromotionController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state relative-caret-position="408">
           <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
           <folding>
             <element signature="e#46#71#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://81ab84f5-01e2-4194-9bdc-49fc1c73486b/schema/cardapion/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="39c96ae0-e6d2-4fa8-8aa2-f9710cb1d5c0">
+          <filtering />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_11_230437_create_configs_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ConfigController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/filesystems.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_11_184642_create_products_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/client/menu.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="104" column="23" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
         </state>
       </provider>
     </entry>
