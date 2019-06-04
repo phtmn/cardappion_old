@@ -33,8 +33,10 @@
                     <thead class="text-primary">
                         <th>Codigo</th>
                         <th>Nome</th>
+                        <th>Categoria</th>
                         <th>Preço</th>
                         <th>Imagem</th>
+                        <th></th>
 
                     </thead>
                     <tbody>
@@ -42,8 +44,12 @@
                         <tr>
                             <td>{{$d->id}}</td>
                             <td>{{$d->description}}</td>
+                            <td>{{ $d->category->name }}</td>
                             <td>{{ $d->price}}</td>
                             <td><img src="{{Storage::url($d->image)}}" style="height: 70px;" alt=""/></td>
+                            <td>
+                                <a href="" data-toogle="toltip" title="Editar produto" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
+                            </td>
                         </tr>
                     @empty
                         <p>Nenhuma promoção cadastrada</p>

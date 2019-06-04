@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Models\Menu;
+use App\Models\ProductCategory;
 use App\Models\Product;
+use App\Models\Menu;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -19,7 +20,8 @@ class ProductsController extends Controller
     public function create(){
 
         return view('admin.products.create',[
-            'menus' => Menu::all()
+            'categories' => ProductCategory::all(),
+            'menus'      => Menu::all()
         ]);
     }
 
@@ -28,10 +30,12 @@ class ProductsController extends Controller
         try{
             $product = $request->all();
 
-            if($request->hasFile('img')){
-                $product['image'] = $request->img->store('products');
+            if($request->hasFile('image')){
+                $product['image']  = $request->image->store('products');
+
             }
 
+            $product['active'] = 1;
             Product::create($product);
 
             return redirect()->back()->with('msg','Produto Inserido Com Sucesso!');

@@ -22,7 +22,7 @@
 <ion-app>
     <ion-header>
         <ion-toolbar color="primary">
-            <ion-title>Uma oferta de: {{ $promotion->tenant->name ?? 'CardappONf'}}</ion-title>
+            <ion-title>Uma oferta de: {{ $promotion->tenant->name ?? 'CardappiON'}}</ion-title>
         </ion-toolbar>
     </ion-header>
     <ion-content>

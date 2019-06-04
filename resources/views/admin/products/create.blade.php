@@ -36,35 +36,36 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="" class="text-primary">Valor</label>
-                    <input type="text" name="price" class="form-control">
-                </div>
-
-                <div class="form-group">
-                    <label for="" class="text-primary">Clique para adicionar imagem destaque</label>
-                    <input type="file" name="img" class="form-control">
-                </div>
-
-                <div class="form-group">
-                    <label for="" class="text-primary">Descreva esse Item</label>
-                    <textarea name="details" id="" cols="30" rows="10" class="form-control"></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="active" class="text-primary">Incluir no Cardápio</label>
-                    <select name="menu_id" id="" class="form-control" placeholder="Selecione">
-                        @foreach($menus as $menu)
-                            <option value="{{$menu->id}}">{{$menu->description}}</option>
+                    <label for="Categoria" class="text-primary">Categoria</label>
+                    <select name="category_id" id="" class="form-control">
+                        @foreach($categories as $c)
+                            <option value="{{$c->id }}">{{$c->name }}</option>
                         @endforeach
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="active">Disponivel</label>
-                    <select name="active" id="" class="form-control">
-                        <option value="1" selected>Sim</option>
-                        <option value="0">Não</option>
+                    <label for="" class="text-primary">Valor</label>
+                    <input type="text" name="price" class="form-control">
+                </div>
+
+                <div class="img">
+                    <label class="text-primary"> Foto de Destaque</label>
+                    <input type="file" id="input-file-now" name="image" class="dropify img-thumbnail" />
+                </div>
+
+                <div class="form-group">
+                    <label for="Categoria" class="text-primary">Adicionar ao menu</label>
+                    <select name="menu_id" id="" class="form-control">
+                        @foreach($menus as $m)
+                            <option value="{{$m->id }}">{{$m->description }}</option>
+                        @endforeach
                     </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="nome" class="text-primary">Informações Adicionais</label>
+                    <textarea name="details" id="summernote" cols="30" rows="10"></textarea>
                 </div>
 
             </div>
@@ -74,5 +75,50 @@
             </div>
         </form>
     </div>
+
+@stop
+
+@section('css')
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote-bs4.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('js/dropify/dist/css/dropify.css')}}">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote-bs4.js"></script> -->
+
+@stop
+
+@section('js')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote-bs4.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote-bs4.js"></script> -->
+    <script src="{{asset('js/dropify/dist/js/dropify.js')}}"></script>
+    <script src="{{ asset('js/jquery.mask.min.js') }}"></script>
+    <script src="{{ asset('js/viaCep.js') }}"></script>
+    <script>
+
+        $('#summernote').summernote({
+            toolbar: [
+                // [groupName, [list of button]]
+                ['style', ['bold', 'italic', 'underline', 'clear']],
+                ['font', ['strikethrough', 'superscript', 'subscript']],
+                ['fontsize', ['fontsize']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['height', ['height']]
+            ]
+        });
+
+        $(document).ready(function(){
+                $("#tel_res,#tel_cel").mask('(00)00000-0000');
+                $("#cpf").mask('00000000000');
+                $("#cep").mask('00.000-000');
+        })
+
+        $(document).ready(function(){
+            $('.dropify').dropify({
+                messages:{
+                    'default': 'Clique para enviar a foto da sua oferta'
+                }
+            });
+        });
+    </script>
+
 
 @stop

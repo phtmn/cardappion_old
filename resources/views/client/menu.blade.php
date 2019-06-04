@@ -16,6 +16,11 @@
     <title>{{$menu->description}}</title>
     <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
     <link href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" rel="stylesheet">
+    <style>
+        .cardapio {
+            margint-top:100px;
+        }
+    </style>
 </head>
 <body>
 <ion-app>
@@ -26,85 +31,202 @@
                 <ion-title>Categorias</ion-title>
             </ion-toolbar>
         </ion-header>
-        <ion-content>
-            <ion-list>
-                <ion-item>Bebidas</ion-item>
-                <ion-item>Hamburgues</ion-item>
-                <ion-item>Pizzas</ion-item>
-                <ion-item>Sobremesas</ion-item>
-                <ion-item>Japonesa</ion-item>
-            </ion-list>
-        </ion-content>
-    </ion-menu>
 
-
-
-
-    </ion-menu>
+        <ion-list>
+            @foreach($categories as $c)
+                <ion-item>
+                    <ion-icon slot="start" name="beer"></ion-icon>
+                    <ion-label> {{ $c->name }}</ion-label>
+                </ion-item>
+            @endforeach
+        </ion-list>
+  </ion-menu>
 
     <div class="ion-page" main>
-        <ion-header>
-                <ion-title>{{ $menu->description }}</ion-title>
-            </ion-toolbar>
-        </ion-header>
+        <ion-toolbar color="primary">
+            <ion-title>{{ $menu->description ?? 'Cardapio'}}</ion-title>
+            <ion-buttons slot="start">
+                <ion-button onclick="openFirst()">
+                    <ion-icon slot="icon-only" name="menu" ></ion-icon>
+                </ion-button>
+            </ion-buttons>
+        </ion-toolbar>
+
         <ion-content padding>
-            <ion-button expand="block" onclick="openFirst()">Ver categorias</ion-button>
-                    <ion-list>
-                        @forelse($menu->products as $item)
-                          <ion-item href="{{route('product.detail',$item->id)}}">
-                              <ion-thumbnail slot="start">
-                                  <img src="{{Storage::url($item->image)}}" alt="">
-                              </ion-thumbnail>
 
-                              <ion-label>{{$item->description}} - {{$item->price}}</ion-label>
-
-                          </ion-item>
-                        @empty
-                            <p>Nada a exibir</p>
-                        @endforelse
-                    </ion-list>
-            <ion-input></ion-input>
-
-            <!-- Input with value -->
-            <ion-input value="custom"></ion-input>
-
-            <!-- Input with placeholder -->
-            <ion-input placeholder="Enter Input"></ion-input>
-
-            <!-- Input with clear button when there is a value -->
-            <ion-input clear-input value="clear me"></ion-input>
-
-            <!-- Number type input -->
-            <ion-input type="number" value="333"></ion-input>
-
-            <!-- Disabled input -->
-            <ion-input value="Disabled" disabled></ion-input>
-
-            <!-- Readonly input -->
-            <ion-input value="Readonly" readonly></ion-input>
-
-            <!-- Inputs with labels -->
-            <ion-item>
-                <ion-label>Default Label</ion-label>
-                <ion-input></ion-input>
-            </ion-item>
-
-            <ion-item>
-                <ion-label position="floating">Floating Label</ion-label>
-                <ion-input></ion-input>
-            </ion-item>
-
-            <ion-item>
-                <ion-label position="fixed">Fixed Label</ion-label>
-                <ion-input></ion-input>
-            </ion-item>
-
-            <ion-item>
-                <ion-label position="stacked">Stacked Label</ion-label>
-                <ion-input></ion-input>
-            </ion-item>
         </ion-content>
+        <ion-tabs>
+            <ion-tab tab="cardapio">
+                <ion-list style="margin-top: 50px">
+                    @forelse($menu->products as $item)
+                        <ion-item href="{{route('product.detail',$item->id)}}">
+                            <ion-thumbnail slot="start">
+                                <img src="{{Storage::url($item->image)}}" alt="">
+                            </ion-thumbnail>
+                            <ion-label>{{$item->description}} - {{$item->price}}</ion-label>
+                        </ion-item>
+                        <ion-item href="{{route('product.detail',$item->id)}}">
+                            <ion-thumbnail slot="start">
+                                <img src="{{Storage::url($item->image)}}" alt="">
+                            </ion-thumbnail>
+                            <ion-label>{{$item->description}} - {{$item->price}}</ion-label>
+                        </ion-item>
+                        <ion-item href="{{route('product.detail',$item->id)}}">
+                            <ion-thumbnail slot="start">
+                                <img src="{{Storage::url($item->image)}}" alt="">
+                            </ion-thumbnail>
+                            <ion-label>{{$item->description}} - {{$item->price}}</ion-label>
+                        </ion-item>
+                        <ion-item href="{{route('product.detail',$item->id)}}">
+                            <ion-thumbnail slot="start">
+                                <img src="{{Storage::url($item->image)}}" alt="">
+                            </ion-thumbnail>
+                            <ion-label>{{$item->description}} - {{$item->price}}</ion-label>
+                        </ion-item>
+                    @empty
+                        <p>Nada a exibir</p>
+                    @endforelse
+                </ion-list>
+            </ion-tab>
+        <ion-tab tab="promocoes">
+        <ion-list>
+  <ion-item>
+    <ion-label>Pokémon Yellow</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Mega Man X</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>The Legend of Zelda</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Pac-Man</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Super Mario World</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Pokémon Yellow</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Mega Man X</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>The Legend of Zelda</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Pac-Man</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Super Mario World</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Pokémon Yellow</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Mega Man X</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>The Legend of Zelda</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Pac-Man</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Super Mario World</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Pokémon Yellow</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Mega Man X</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>The Legend of Zelda</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Pac-Man</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Super Mario World</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Pokémon Yellow</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Mega Man X</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>The Legend of Zelda</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Pac-Man</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Super Mario World</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Pokémon Yellow</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Mega Man X</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>The Legend of Zelda</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Pac-Man</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Super Mario World</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Pokémon Yellow</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Mega Man X</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>The Legend of Zelda</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Pac-Man</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Super Mario World</ion-label>
+  </ion-item>
+
+</ion-list>
+        </ion-tab>
+
+        <ion-tab tab="parceiro">
+            <ion-item style="margin-top:50px">
+                <ion-label>Dados do Parceiro</ion-label>
+            </ion-item>
+
+        </ion-tab>
+
+        <ion-tab-bar slot="bottom">
+            <ion-tab-button tab="cardapio">
+                <ion-label>Cardapio</ion-label>
+                <ion-icon name="paper"></ion-icon>
+            </ion-tab-button>
+
+            <ion-tab-button tab="promocoes">
+                <ion-label>Promoções</ion-label>
+                <ion-icon name="gift"></ion-icon>
+            </ion-tab-button>
+
+            <ion-tab-button tab="parceiro">
+                <ion-label>Estabelecimento</ion-label>
+                <ion-icon name="business"></ion-icon>
+            </ion-tab-button>
+
+        </ion-tab-bar>
+        </ion-tabs>
     </div>
+
+
 </ion-app>
 
 <ion-menu-controller></ion-menu-controller>
@@ -117,14 +239,7 @@
         menuCtrl.open('first');
     }
 
-    function openEnd() {
-        menuCtrl.open('end');
-    }
 
-    function openCustom() {
-        menuCtrl.enable(true, 'custom');
-        menuCtrl.open('custom');
-    }
 </script>
 </body>
 </html>

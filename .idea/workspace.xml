@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="99e48060-c47b-49dc-ba43-e6d6be4d792e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/menu.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="das://81ab84f5-01e2-4194-9bdc-49fc1c73486b/schema/cardapion/table/users">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="39c96ae0-e6d2-4fa8-8aa2-f9710cb1d5c0">
+            <state projectRestartId="14d3fb57-1f62-40ca-b691-ff9a3bf7b78b">
               <filtering />
             </state>
           </provider>
@@ -97,7 +96,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/client/menu.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
+            <state relative-caret-position="33">
               <caret line="104" column="23" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
             </state>
           </provider>
@@ -277,7 +276,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -307,6 +305,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -395,18 +394,19 @@
       <workItem from="1558369415643" duration="65000" />
       <workItem from="1558861847157" duration="799000" />
       <workItem from="1558959964858" duration="1080000" />
-      <workItem from="1559219847490" duration="37000" />
+      <workItem from="1559219847490" duration="690000" />
+      <workItem from="1559237301206" duration="23000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103672000" />
+    <option name="totallyTimeSpent" value="104348000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="696" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28030303" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28484848" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -667,7 +667,7 @@
     </entry>
     <entry file="das://81ab84f5-01e2-4194-9bdc-49fc1c73486b/schema/cardapion/table/users">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="39c96ae0-e6d2-4fa8-8aa2-f9710cb1d5c0">
+        <state projectRestartId="14d3fb57-1f62-40ca-b691-ff9a3bf7b78b">
           <filtering />
         </state>
       </provider>
@@ -693,13 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_11_184642_create_products_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -707,9 +700,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_11_184642_create_products_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/client/menu.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
+        <state relative-caret-position="33">
           <caret line="104" column="23" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
         </state>
       </provider>

@@ -37,7 +37,6 @@
                         <div class="img">
                             <label class="text-primary"> Foto de Destaque</label>
                             <input type="file" id="input-file-now" name="image" class="dropify img-thumbnail" />
-{{--                            <input type="file" name="image" class="form-control">--}}
                         </div>
 
                         <div class="form-group">

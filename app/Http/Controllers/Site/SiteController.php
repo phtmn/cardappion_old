@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Site;
 use App\Models\Menu;
 use App\Models\Product;
 use App\Models\Promotion;
+use App\Models\ProductCategory;
 use App\Http\Controllers\Controller;
 
 class SiteController extends Controller
@@ -22,8 +23,12 @@ class SiteController extends Controller
 
     public function menu($slug)
     {
-        $menu = Menu::where('slug','=',$slug)->first();
-        return view('client.menu',compact('menu'));
+
+        return view('client.menu',[
+            'promotions'    => Promotion::all(),
+            'menu'          => Menu::where('slug','=',$slug)->first(),
+            'categories'    => ProductCategory::all()
+        ]);
 
     }
 
