@@ -11,7 +11,7 @@ use App\Http\Controllers\Controller;
 class SiteController extends Controller
 {
     public function home(){
-        return view('layouts.home');
+        return view('layouts.site3');
     }
 
     public function promocao($slug){
