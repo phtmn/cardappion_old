@@ -56,7 +56,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <!-- Navabr -->
-  <nav id="navbar-main" class="navbar navbar-horizontal navbar-main navbar-expand-lg navbar-dark bg-primary">
+  <nav id="navbar-main" class="navbar navbar-horizontal navbar-main navbar-expand-lg navbar-dark bg-danger">
     <div class="container">
       <a class="navbar-brand" href="./pages/dashboards/dashboard.html">
         <img src="{{asset('vendor/argon/assets/img/brand/white.png')}}">
@@ -81,66 +81,44 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
         </div>
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a href="./pages/dashboards/dashboard.html" class="nav-link">
-              <span class="nav-link-inner--text">Dashboard</span>
-            </a>
-          </li>
+      
           <li class="nav-item">
             <a href="./pages/examples/pricing.html" class="nav-link">
-              <span class="nav-link-inner--text">Pricing</span>
+              <span class="nav-link-inner--text">Sobre Nós</span>
             </a>
           </li>
           <li class="nav-item">
             <a href="{{asset('vendor/argon/pages/examples/login.html')}}" class="nav-link">
-              <span class="nav-link-inner--text">Login</span>
+              <span class="nav-link-inner--text">Serviços</span>
             </a>
           </li>
           <li class="nav-item">
             <a href="{{asset('vendor/argon/pages/examples/register.html')}}" class="nav-link">
-              <span class="nav-link-inner--text">Register</span>
+              <span class="nav-link-inner--text">Planos</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="./pages/examples/lock.html" class="nav-link">
-              <span class="nav-link-inner--text">Lock</span>
+            <a href="{{asset('vendor/argon/pages/examples/register.html')}}" class="nav-link">
+              <span class="nav-link-inner--text">Download App</span>
             </a>
           </li>
+       
         </ul>
         <hr class="d-lg-none" />
         <ul class="navbar-nav align-items-lg-center ml-lg-auto">
           <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="https://www.facebook.com/creativetim" target="_blank" data-toggle="tooltip" title="" data-original-title="Like us on Facebook">
+            <a class="nav-link nav-link-icon" href="#" target="_blank" >
               <i class="fab fa-facebook-square"></i>
               <span class="nav-link-inner--text d-lg-none">Facebook</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="https://www.instagram.com/creativetimofficial" target="_blank" data-toggle="tooltip" title="" data-original-title="Follow us on Instagram">
+            <a class="nav-link nav-link-icon" href="#" target="_blank">
               <i class="fab fa-instagram"></i>
               <span class="nav-link-inner--text d-lg-none">Instagram</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="https://twitter.com/creativetim" target="_blank" data-toggle="tooltip" title="" data-original-title="Follow us on Twitter">
-              <i class="fab fa-twitter-square"></i>
-              <span class="nav-link-inner--text d-lg-none">Twitter</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="https://github.com/creativetimofficial" target="_blank" data-toggle="tooltip" title="" data-original-title="Star us on Github">
-              <i class="fab fa-github"></i>
-              <span class="nav-link-inner--text d-lg-none">Github</span>
-            </a>
-          </li>
-          <li class="nav-item d-none d-lg-block ml-lg-4">
-            <a href="https://www.creative-tim.com/product/argon-dashboard-pro" target="_blank" class="btn btn-neutral btn-icon">
-              <span class="btn-inner--icon">
-                <i class="fas fa-shopping-cart mr-2"></i>
-              </span>
-              <span class="nav-link-inner--text">Purchase now</span>
-            </a>
-          </li>
+         
         </ul>
       </div>
     </div>
@@ -148,81 +126,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <!-- Main content -->
   <div class="main-content">
     <!-- Header -->
-    <div class="header bg-primary pt-5 pb-7">
+    <div class="header bg-danger pt-5 pb-7">
       <div class="container">
         <div class="header-body">
           <div class="row align-items-center">
             <div class="col-lg-6">
               <div class="pr-5">
-                <h1 class="display-2 text-white font-weight-bold mb-0">Argon Dashboard PRO</h1>
-                <h2 class="display-4 text-white font-weight-light">A beautiful premium dashboard for Bootstrap 4.</h2>
-                <p class="text-white mt-4">Argon perfectly combines reusable HTML and modular CSS with a modern styling and beautiful markup throughout each HTML template in the pack.</p>
+                <h1 class="display-1 text-white font-weight-bold mb-0">Soluções em Cardápios Digitais </h1>
+                <h2 class="display-4 text-white font-weight-light">Todos os cardápios e promoções em um único lugar.</h2>
+                
                 <div class="mt-5">
-                  <a href="./pages/dashboards/dashboard.html" class="btn btn-neutral my-2">Explore Dashboard</a>
-                  <a href="https://www.creative-tim.com/product/argon-dashboard-pro" class="btn btn-default my-2">Purchase now</a>
+                  <a href="./pages/dashboards/dashboard.html" class="btn btn-neutral my-2">Cadastre-se</a>
+                  <a href="https://www.creative-tim.com/product/argon-dashboard-pro" class="btn btn-neutral my-2">Acessar conta </a>
+                  
                 </div>
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="row pt-5">
-                <div class="col-md-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow mb-4">
-                        <i class="ni ni-active-40"></i>
-                      </div>
-                      <h5 class="h3">Components</h5>
-                      <p>Argon comes with over 70 handcrafted components.</p>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="icon icon-shape bg-gradient-info text-white rounded-circle shadow mb-4">
-                        <i class="ni ni-active-40"></i>
-                      </div>
-                      <h5 class="h3">Plugins</h5>
-                      <p>Fully integrated and extendable third-party plugins that you will love.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 pt-lg-5 pt-4">
-                  <div class="card mb-4">
-                    <div class="card-body">
-                      <div class="icon icon-shape bg-gradient-success text-white rounded-circle shadow mb-4">
-                        <i class="ni ni-active-40"></i>
-                      </div>
-                      <h5 class="h3">Pages</h5>
-                      <p>From simple to complex, you get a beautiful set of 15+ page examples.</p>
-                    </div>
-                  </div>
-                  <div class="card mb-4">
-                    <div class="card-body">
-                      <div class="icon icon-shape bg-gradient-warning text-white rounded-circle shadow mb-4">
-                        <i class="ni ni-active-40"></i>
-                      </div>
-                      <h5 class="h3">Documentation</h5>
-                      <p>You will love how easy is to to work with Argon.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
       </div>
       <div class="separator separator-bottom separator-skew zindex-100">
         <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-          <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
+          <polygon class="fill-secondary" points="2560 0 2560 100 0 100"></polygon>
         </svg>
       </div>
     </div>
-    <section class="py-6 pb-9 bg-default">
+    <section class="py-6 pb-9 bg-secondary">
       <div class="row justify-content-center text-center">
         <div class="col-md-6">
-          <h2 class="display-3 text-white">A complete HTML solution</h3>
+          <h2 class="display-3 text-white">Fazer parte da nossa plataforma é muito simples</h3>
             <p class="lead text-white">
-              Argon is a completly new product built on our newest re-built from scratch framework structure that is meant to make our products more intuitive,
-              more adaptive and, needless to say, so much easier to customize. Let Argon amaze you with its cool features and build tools and get your project to a whole new level.
+            Temos uma plataforma perfeita para o seu estabeleciomento, seja ele do tamanho que for.
             </p>
         </div>
       </div>
@@ -235,48 +172,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <div class="col-lg-4">
                 <div class="card card-lift--hover shadow border-0">
                   <div class="card-body py-5">
-                    <div class="icon icon-shape bg-gradient-primary text-white rounded-circle mb-4">
-                      <i class="ni ni-check-bold"></i>
-                    </div>
-                    <h4 class="h3 text-primary text-uppercase">Based on Bootstrap 4</h4>
-                    <p class="description mt-3">Argon is built on top of the most popular open source toolkit for developing with HTML, CSS, and JS.</p>
-                    <div>
-                      <span class="badge badge-pill badge-primary">bootstrap 4</span>
-                      <span class="badge badge-pill badge-primary">dashboard</span>
-                      <span class="badge badge-pill badge-primary">template</span>
-                    </div>
+                    
+                    <h4 class="h3 text-danger text-center text-uppercase">Cadastre seu estabelecimento</h4>
+                    
+                  
                   </div>
                 </div>
               </div>
               <div class="col-lg-4">
                 <div class="card card-lift--hover shadow border-0">
                   <div class="card-body py-5">
-                    <div class="icon icon-shape bg-gradient-success text-white rounded-circle mb-4">
-                      <i class="ni ni-istanbul"></i>
-                    </div>
-                    <h4 class="h3 text-success text-uppercase">Integrated build tools</h4>
-                    <p class="description mt-3">Use Argons's included npm and gulp scripts to compile source code, run tests, and more with just a few simple commands.</p>
-                    <div>
-                      <span class="badge badge-pill badge-success">npm</span>
-                      <span class="badge badge-pill badge-success">gulp</span>
-                      <span class="badge badge-pill badge-success">build tools</span>
-                    </div>
+                    
+                    <h4 class="h3 text-danger text-center text-uppercase">Cadastre seu cardápio</h4>
+                  
+                  
                   </div>
                 </div>
               </div>
               <div class="col-lg-4">
                 <div class="card card-lift--hover shadow border-0">
                   <div class="card-body py-5">
-                    <div class="icon icon-shape bg-gradient-warning text-white rounded-circle mb-4">
-                      <i class="ni ni-planet"></i>
-                    </div>
-                    <h4 class="h3 text-warning text-uppercase">Full Sass support</h4>
-                    <p class="description mt-3">Argon makes customization easier than ever before. You get all the tools to make your website building process a breeze.</p>
-                    <div>
-                      <span class="badge badge-pill badge-warning">sass</span>
-                      <span class="badge badge-pill badge-warning">design</span>
-                      <span class="badge badge-pill badge-warning">customize</span>
-                    </div>
+                    
+                    <h4 class="h3 text-danger text-center text-uppercase">Compartilhe seu cardápio</h4>
+                   
                   </div>
                 </div>
               </div>
@@ -285,7 +203,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
       </div>
     </section>
-    <section class="py-6">
+    <section class="py-6 bg-danger">
       <div class="container">
         <div class="row row-grid align-items-center">
           <div class="col-md-6 order-md-2">
@@ -293,7 +211,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
           <div class="col-md-6 order-md-1">
             <div class="pr-md-5">
-              <h1>Awesome features</h1>
+              <h1>Cadastre seu estabelecimento</h1>
               <p>This dashboard comes with super cool features that are meant to help in the process. Handcrafted components, page examples and functional widgets are just a few things you will see and love at first sight.</p>
               <ul class="list-unstyled mt-5">
                 <li class="py-2">
@@ -346,7 +264,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
           <div class="col-md-6">
             <div class="pr-md-5">
-              <h1>Example pages</h1>
+              <h1> Cadastre seu cardápio digital</h1>
               <p>If you want to get inspiration or just show something directly to your clients, you can jump start your development with our pre-built example pages.</p>
               <a href="./pages/examples/profile.html" class="font-weight-bold text-warning mt-5">Explore pages</a>
             </div>
@@ -374,7 +292,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
-            <h2 class="display-3">Nucleo Icons</h2>
+            <h2 class="display-3">Fazer parte da nossa plataforma é muito simples</h2>
             <p class="lead">
               The official package contains over 21.000 icons which are looking great in combination with Argon Design System. Make sure you check all of them and use those that you like the most.
             </p>
