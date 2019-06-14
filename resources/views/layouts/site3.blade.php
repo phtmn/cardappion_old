@@ -33,7 +33,7 @@
   <meta property="og:description" content="Start your development with a Dashboard for Bootstrap 4." />
   <meta property="og:site_name" content="Creative Tim" />
   <!-- Favicon -->
-  <link rel="icon" href="{{asset('vendor/argon/assets/img/brand/favicon.png')}}" type="image/png">
+  <link rel="icon" href="{{asset('vendor/argon/assets/img/brand/icon2.png')}}" type="image/png">
   <!-- Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
   <!-- Icons -->
@@ -59,7 +59,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <nav id="navbar-main" class="navbar navbar-horizontal navbar-main navbar-expand-lg navbar-dark bg-danger">
     <div class="container">
       <a class="navbar-brand" href="./pages/dashboards/dashboard.html">
-        <img src="{{asset('vendor/argon/assets/img/brand/white.png')}}">
+        <img src="{{asset('vendor/argon/assets/img/brand/logo2.png')}}" style="width: 215px; height:50px;">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
