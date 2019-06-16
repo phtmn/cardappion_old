@@ -42,6 +42,8 @@
   <!-- Page plugins -->
   <!-- Argon CSS -->
   <link rel="stylesheet" href="{{asset('vendor/argon/assets/css/argon.min.css?v=1.0.0')}}" type="text/css">
+  <!-- STILO CSS -->
+  <link rel="stylesheet" href="{{asset('vendor/argon/assets/css/stilo.css')}}" type="text/css">
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -56,7 +58,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <!-- Navabr -->
-  <nav id="navbar-main" class="navbar navbar-horizontal navbar-main navbar-expand-lg navbar-dark bg-danger">
+  <nav id="navbar-main" class="navbar navbar-horizontal navbar-main navbar-expand-lg navbar-dark bg-black">
     <div class="container">
       <a class="navbar-brand" href="./pages/dashboards/dashboard.html">
         <img src="{{asset('vendor/argon/assets/img/brand/logo2.png')}}" style="width: 215px; height:50px;">
@@ -126,7 +128,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <!-- Main content -->
   <div class="main-content">
     <!-- Header -->
-    <div class="header bg-danger pt-5 pb-7">
+    <div class="header bg-black pt-5 pb-7">
       <div class="container">
         <div class="header-body">
           <div class="row align-items-center">
@@ -136,8 +138,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <h2 class="display-4 text-white font-weight-light">Todos os cardápios e promoções em um único lugar.</h2>
                 
                 <div class="mt-5">
-                  <a href="./pages/dashboards/dashboard.html" class="btn btn-neutral my-2">Cadastre-se</a>
-                  <a href="https://www.creative-tim.com/product/argon-dashboard-pro" class="btn btn-neutral my-2">Acessar conta </a>
+                  <a href="./pages/dashboards/dashboard.html" class="btn btn-azul my-2">Cadastre-se</a>
+                  <a href="https://www.creative-tim.com/product/argon-dashboard-pro" class="btn btn-verd my-2">Acessar conta </a>
                   
                 </div>
               </div>
@@ -157,7 +159,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <section class="py-6 pb-9 bg-secondary">
       <div class="row justify-content-center text-center">
         <div class="col-md-6">
-          <h2 class="display-3 text-white">Fazer parte da nossa plataforma é muito simples</h3>
+          <h2 class="display-3 text-azul2">Fazer parte da nossa plataforma é muito simples</h3>
             <p class="lead text-white">
             Temos uma plataforma perfeita para o seu estabeleciomento, seja ele do tamanho que for.
             </p>
@@ -170,30 +172,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="col-lg-12">
             <div class="row">
               <div class="col-lg-4">
-                <div class="card card-lift--hover shadow border-0">
+                <div class="card card-lift--hover shadow border-0 bg-azul">
                   <div class="card-body py-5">
                     
-                    <h4 class="h3 text-danger text-center text-uppercase">Cadastre seu estabelecimento</h4>
+                    <h4 class="h3 text-white text-center text-uppercase">Cadastre seu estabelecimento</h4>
                     
                   
                   </div>
                 </div>
               </div>
               <div class="col-lg-4">
-                <div class="card card-lift--hover shadow border-0">
+                <div class="card card-lift--hover shadow border-6 bg-primary">
                   <div class="card-body py-5">
                     
-                    <h4 class="h3 text-danger text-center text-uppercase">Cadastre seu cardápio</h4>
+                    <h4 class="h3 text-white text-center text-uppercase">Cadastre seu cardápio</h4>
                   
                   
                   </div>
                 </div>
               </div>
               <div class="col-lg-4">
-                <div class="card card-lift--hover shadow border-0">
+                <div class="card card-lift--hover shadow border-0 bg-lilas">
                   <div class="card-body py-5">
                     
-                    <h4 class="h3 text-danger text-center text-uppercase">Compartilhe seu cardápio</h4>
+                    <h4 class="h3 text-white text-center text-uppercase">Compartilhe seu cardápio</h4>
                    
                   </div>
                 </div>
@@ -203,16 +205,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
       </div>
     </section>
-    <section class="py-6 bg-danger">
+    <section class="py-6 bg-black"> <!---->
       <div class="container">
         <div class="row row-grid align-items-center">
           <div class="col-md-6 order-md-2">
             <img src="{{asset('vendor/argon/assets/img/theme/landing-1.png')}}" class="img-fluid">
           </div>
-          <div class="col-md-6 order-md-1">
-            <div class="pr-md-5">
-              <h1>Cadastre seu estabelecimento</h1>
-              <p>This dashboard comes with super cool features that are meant to help in the process. Handcrafted components, page examples and functional widgets are just a few things you will see and love at first sight.</p>
+          <div class="col-md-6 order-md-1 ">
+            <div class="pr-md-5 ">
+              <h1 class="text-azul">Cadastre seu estabelecimento</h1>
+              <p class="text-azul">This dashboard comes with super cool features that are meant to help in the process. Handcrafted components, page examples and functional widgets are just a few things you will see and love at first sight.</p>
               <ul class="list-unstyled mt-5">
                 <li class="py-2">
                   <div class="d-flex align-items-center">
@@ -222,7 +224,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                       </div>
                     </div>
                     <div>
-                      <h4 class="mb-0">Carefully crafted components</h4>
+                      <h4 class="mb-0 text-lilas">Carefully crafted components</h4>
                     </div>
                   </div>
                 </li>
@@ -234,7 +236,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                       </div>
                     </div>
                     <div>
-                      <h4 class="mb-0">Amazing page examples</h4>
+                      <h4 class="mb-0 text-lilas">Amazing page examples</h4>
                     </div>
                   </div>
                 </li>
@@ -246,7 +248,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                       </div>
                     </div>
                     <div>
-                      <h4 class="mb-0">Super friendly support team</h4>
+                      <h4 class="mb-0 text-lilas">Super friendly support team</h4>
                     </div>
                   </div>
                 </li>
@@ -287,7 +289,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
         </div>
       </div>
+      <!--
     </section>
+    
     <section class="py-7 section-nucleo-icons bg-white overflow-hidden">
       <div class="container">
         <div class="row justify-content-center">
@@ -305,21 +309,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="blur--hover">
           <a href="./docs/foundation/icons.html">
             <div class="icons-container blur-item mt-5">
-              <!-- Center -->
+              Center
               <i class="icon ni ni-diamond"></i>
-              <!-- Right 1 -->
+              Right 1
               <i class="icon icon-sm ni ni-album-2"></i>
               <i class="icon icon-sm ni ni-app"></i>
               <i class="icon icon-sm ni ni-atom"></i>
-              <!-- Right 2 -->
+              Right 2
               <i class="icon ni ni-bag-17"></i>
               <i class="icon ni ni-bell-55"></i>
               <i class="icon ni ni-credit-card"></i>
-              <!-- Left 1 -->
+              Left 1
               <i class="icon icon-sm ni ni-briefcase-24"></i>
               <i class="icon icon-sm ni ni-building"></i>
               <i class="icon icon-sm ni ni-button-play"></i>
-              <!-- Left 2 -->
+              Left 2
               <i class="icon ni ni-calendar-grid-58"></i>
               <i class="icon ni ni-camera-compact"></i>
               <i class="icon ni ni-chart-bar-32"></i>
@@ -328,7 +332,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </a>
         </div>
       </div>
+    
     </section>
+
+    
     <section class="py-7">
       <div class="container">
         <div class="row row-grid justify-content-center">
@@ -385,6 +392,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>
     </section>
   </div>
+   -->   
   <!-- Footer -->
   <footer class="py-5" id="footer-main">
     <div class="container">
