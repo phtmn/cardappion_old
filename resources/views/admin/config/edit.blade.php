@@ -40,12 +40,7 @@
                                 <input type="text" name="nome" class="form-control" value="{{$config->nome}}">
                             </div>
                 </div>               
-                <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">CNPJ </label>
-                            <div class="col-sm-3">
-                                <input type="text" name="cnpj" class="form-control" value="{{$config->cnpj}}">
-                            </div>
-                </div>
+              
                 <div class="form-group row">
                         <label for="" class="col-sm-3 col-form-label text-right">CEP <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
                             <div class="col-sm-2">
