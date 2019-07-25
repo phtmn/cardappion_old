@@ -10,8 +10,7 @@ class Config extends Model
 {
     use TenantTrait;
 
-    protected $fillable = ['user_id','tenant_id','store_name','slogan','description','category','email','site','instagram',
-        'facebook','maps','address','city','has_delivery','delivery_phone','banner','logo'];
+    protected $fillable = ['user_id','tenant_id','name','docnumber','zipcode'];
 
     public function user(){
         return $this->belongsTo(User::class);

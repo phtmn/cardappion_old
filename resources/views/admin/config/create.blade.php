@@ -37,17 +37,24 @@
                 <div class="form-group row">
                         <label for="" class="col-sm-3 col-form-label text-right">Nome <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
                             <div class="col-sm-6">
-                                <input type="text" name="nome" class="form-control">
+                                <input type="text" name="name" class="form-control">
                             </div>
-                </div>               
+                </div>  
+
+                <div class="form-group row">
+                        <label for="" class="col-sm-3 col-form-label text-right">Nº do Documento <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
+                            <div class="col-sm-3">
+                                <input type="text" name="docnumber" class="form-control">
+                            </div>
+                </div>              
                
                 <div class="form-group row">
                         <label for="" class="col-sm-3 col-form-label text-right">CEP <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
                             <div class="col-sm-2">
-                                <input type="text" name="cep" class="form-control">
+                                <input type="text" name="zipcode" class="form-control">
                             </div>
                 </div>
-                <div class="form-group row">
+                <!-- <div class="form-group row">
                         <label for="" class="col-sm-3 col-form-label text-right">Endereço </label>
                             <div class="col-sm-6">
                                 <input type="text" name="endereco" class="form-control">
@@ -106,7 +113,7 @@
                             <div class="col-sm-4">
                                 <input type="text" name="instagram" class="form-control">
                             </div>
-                </div>                      
+                </div>                       -->
                 <hr>                    
                     <div class="form-group row">                     
                             <div class="col-sm-4">                                

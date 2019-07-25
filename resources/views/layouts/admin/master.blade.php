@@ -4,96 +4,71 @@ This is a starter template page. Use this page to start your new project from
 scratch. This page gets rid of all links and provides the needed markup only.
 -->
 <html lang="pt-br">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-    <title>CardAppOn - Administração</title>
-
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="{{asset('vendor/plugins/font-awesome/css/font-awesome.min.css')}}">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="{{asset('vendor/dist/css/adminlte.css')}}">
-    <!-- Google Font: Source Sans Pro -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-
-    @yield('css')
+  <meta charset="utf-8">
+  <title>Cardapion Admin</title>
+  <link rel="canonical" href="https://www.creative-tim.com/product/argon-dashboard-pro" />
+  <link rel="icon" href="{{asset('vendor/argon/assets/img/brand/icon2.png')}}" type="image/png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+  <link rel="stylesheet" href="{{asset('vendor/argon/assets/vendor/nucleo/css/nucleo.css')}}" type="text/css">
+  <link rel="stylesheet" href="{{asset('vendor/argon/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css')}}" type="text/css">
+  <link rel="stylesheet" href="{{asset('vendor/argon/assets/css/argon.min.css?v=1.0.0')}}" type="text/css">
+  <link rel="stylesheet" href="{{asset('vendor/argon/assets/css/stilo.css')}}" type="text/css">
+@yield('css')
 </head>
-<body class="hold-transition sidebar-mini">
-<div class="wrapper" id="app">
+
+
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- Sidenav -->
+  @include('layouts.admin.partes.menu')
+  <!-- Main content -->
+  <div class="main-content" id="panel">
+    <!-- Topnav -->
     @include('layouts.admin.partes.navbar')
-
-
-    <!-- Main Sidebar Container -->
-    <aside class="main-sidebar sidebar-dark-primary elevation-4">
-        <!-- Brand Logo -->
-        <a href="{{route('dashboard.index')}}" class="brand-link">
-            <img src="{{asset('vendor/home/images/logoadmin.jpg')}}" alt="AdminLTE Logo" class="brand-image">
-                 
-            <span class="brand-text font-weight-light"><b>cardAppOn</b></span>
-        </a>
-
-        <!-- Sidebar -->
-        {{-- <div class="sidebar">--}}
-            <!-- Sidebar user panel (optional) -->
-          {{--   <div class="user-panel mt-3 pb-3 mb-3 d-flex"> --}}
-          {{--  <div class="image"> --}}
-          {{--        <img src="{{asset('vendor/dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image"> --}}
-          {{--    </div> --}}
-          {{--    <div class="info"> --}}
-          {{--        <a href="#" class="d-block">{{ auth()->user()->name }}</a> --}}
-          {{--    </div> --}}
-          {{-- </div>--}}
-
-            <!-- Sidebar Menu -->
-            @include('layouts.admin.partes.menu')
-            <!-- /.sidebar-menu -->
+    @yield('cabecalho')
+    @yield('conteudo')
+  
+      <footer class="footer pt-0">
+        <div class="row align-items-center justify-content-lg-between">
+          <div class="col-lg-6">
+            <div class="copyright text-center text-lg-left text-muted">
+              &copy; 2018 <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank">Todos os cardápios e promoções em um único lugar Tim</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+              <li class="nav-item">
+                <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Soluções em Cardápios Digitais</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.creative-tim.com/license" class="nav-link" target="_blank">License</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- /.sidebar -->
-    </aside>
-
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        @yield('cabecalho')
-        <!-- /.content-header -->
-
-        <!-- Main content -->
-        <div class="content">
-            <div class="container-fluid">
-                @yield('conteudo')
-            </div><!-- /.container-fluid -->
-        </div>
-        <!-- /.content -->
+      </footer>
     </div>
-    <!-- /.content-wrapper -->
-
-
-
-    <!-- Main Footer -->
-    <footer class="main-footer">
-        <!-- To the right -->
-        <div class="float-right d-none d-sm-inline">
-        <strong> Todos os cardápios e promoções em um único lugar
-        </div>
-        
-        <!-- Default to the left -->
-        <strong> Soluções em Cardápios Digitais
-    </footer>
-</div>
-<!-- ./wrapper -->
-
-<!-- REQUIRED SCRIPTS -->
-{{--<script src="{{asset('js/app.js')}}"></script>--}}
-<!-- jQuery -->
-
-
-<script src="{{asset('vendor/plugins/jquery/jquery.min.js')}}"></script>
-<!-- Bootstrap 4 -->
-<script src="{{asset('vendor/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-<!-- AdminLTE App -->
-<script src="{{asset('vendor/dist/js/adminlte.min.js')}}"></script>
+  </div>
+  <script src="{{asset('vendor/argon/assets/vendor/jquery/dist/jquery.min.js')}}"></script>
+  <script src="{{asset('vendor/argon/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{asset('vendor/argon/assets/vendor/js-cookie/js.cookie.js')}}"></script>
+  <script src="{{asset('vendor/argon/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js')}}"></script>
+  <script src="{{asset('vendor/argon/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js')}}"></script>
+  <script src="{{asset('vendor/argon/assets/vendor/lavalamp/js/jquery.lavalamp.min.js')}}"></script>
+  <script src="{{asset('vendor/argon/assets/vendor/onscreen/dist/on-screen.umd.min.js')}}"></script>
+  <script src="{{asset('vendor/argon/assets/js/argon.min.js?v=1.0.0')}}"></script>
+  <script src="{{asset('vendor/argon/assets/js/demo.min.js')}}"></script>
 @yield('js')
 </body>
 </html>

@@ -27,25 +27,25 @@ class ConfigController extends Controller
         $config = Config::UpdateOrCreate(
             ['user_id' => auth()->user()->id],
             [
-                'nome'      => $request->nome,
-                'cnpj'      => $request->cnpj,
-                'cep'       => $request->cep,
-                'endereco'  => $request->endereco,
-                'bairro'    => $request->bairro,
-                'numero'    => $request->numero,
-                'cidade'    => $request->cidade,
-                'estado'    => $request->estado,
-                'telefone'  => $request->telefone,
-                'whatsapp'  => $request->whatsapp,
-                'site'      => $request->site,
-                'fanpage'   => $request->fanpage,
-                'instagram' => $request->instagram,                
+                'name'          => $request->name,
+                'docnumber'     => $request->docnumber,
+                'zipcode'       => $request->zipcode,
+                // 'endereco'  => $request->endereco,
+                // 'bairro'    => $request->bairro,
+                // 'numero'    => $request->numero,
+                // 'cidade'    => $request->cidade,
+                // 'estado'    => $request->estado,
+                // 'telefone'  => $request->telefone,
+                // 'whatsapp'  => $request->whatsapp,
+                // 'site'      => $request->site,
+                // 'fanpage'   => $request->fanpage,
+                // 'instagram' => $request->instagram,                
                 'user_id'   => auth()->user()->id
             ]
         );
 
         if($config){
-            return redirect()->route('dashboard.index')->with('msg','Dados armazenados com sucesso!');
+            return redirect()->route('config.createEdit')->with('msg','Dados armazenados com sucesso!');
         }
     }
 }

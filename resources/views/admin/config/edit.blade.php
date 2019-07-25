@@ -1,126 +1,167 @@
 @extends('layouts.admin.master')
 
 @section('cabecalho')
-<div class="panel-header panel-header-sm">
-        <div class="content-header">
-            <div class="container-fluid">
-                <div class="row mb-2">
-                    <div class="col-sm-6">
-                        {{--<a href="{{ route('menus.create') }}" class="btn btn-outline-primary"> Novo Menu +</a> --}}
-                    </div><!-- /.col -->
-                    <div class="col-sm-6">
-                        <ol class="breadcrumb float-sm-right">
-                            {{--<li class="breadcrumb-item"><a href="{{route('dashboard.index')}}">Cardappon</a></li>--}}
-                            <li class="breadcrumb-item active"><i class="text-primary fa fa-cog nav-icon"></i> Perfil   </li>
-                        </ol>
-                    </div><!-- /.col -->
-                </div><!-- /.row -->
-            </div><!-- /.container-fluid -->
+
+
+<div class="header bg-primary pb-6">
+      <div class="container-fluid">
+        <div class="header-body">
+          <div class="row align-items-center py-4">
+            <div class="col-lg-6 col-7">
+            <i class="fas fa-home text-white"></i> 
+              <h3 class="h1 text-white d-inline-block mb-0">Perfil</h3>
+              <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                  <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+                  <li class="breadcrumb-item"><a href="#">Dashboards</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Default</li>
+                </ol>
+              </nav>
+            </div>
+            <div class="col-lg-6 col-5 text-right">
+              
+            </div>
+          </div>
+        
         </div>
+      </div>
     </div>
+
 
 @stop
 
 @section('conteudo')
-    @include('tools.messages')
+   
+
+
+
+
+<div class="container-fluid mt--6">
+<div class="row">
+
+<div class="col-lg-4">
+          <div class="card-wrapper">
+            <!-- Sizes -->
+            <div class="card">
+              <!-- Card header -->
+              <div class="card-header">
+                <h3 class="mb-0">{{ auth()->user()->name }}</h3>
+              </div>
+              <!-- Card body -->
+              <div class="card-body">
+                <div class="form-group">
+                  <label class="form-control-label">Large input {{ auth()->user()->name }} LOGO</label>
+                  <label class="form-control-label">Large input {{ auth()->user()->email }} LOGO</label> 
+                 
+                </div>              
+              </div>
+            </div>
+        
+        </div>
+      </div>
+        <div class="col-lg-8">
+          <div class="card-wrapper">
+            <!-- Form controls -->
+            
+            <!-- HTML5 inputs -->
+            <div class="card">
+              <!-- Card header -->
+              <div class="card-header">
+                <h3 class="mb-0">Dados do Estabelecimento</h3>
+              </div>
+              <!-- Card body -->
+              <div class="card-body">
+         
     <form action="{{route('config.store')}}" method="POST">
     @csrf
-    <div class="row">
-        <div class="col-md-12">
-            <div class="card card-warning card-outline">
-                <div class="card-header">
-                    <h4 class="card-title"><b class=""> Dados do Estabelecimento </b></h4>
-                </div>
-                <div class="card-body">
+                  <div class="form-group row">
+                    <label for="example-text-input" class="col-md-4 col-form-label form-control-label text-right">Nome <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
+                    <div class="col-md-7">
+                        <input type="text" name="name" class="form-control" value="{{$config->name}}">  
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="example-search-input" class="col-md-4 col-form-label form-control-label text-right">Nº do Documento <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
+                    <div class="col-md-3">
+                        <input type="text" name="docnumber" class="form-control" value="{{$config->docnumber}}">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="example-search-input" class="col-md-4 col-form-label form-control-label text-right">CEP <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
+                    <div class="col-md-3">
+                        <input type="text" name="zipcode" class="form-control" value="{{$config->zipcode}}">
+                    </div>
+                  </div>
 
+                  <div class="form-group row">
+                    <label for="example-search-input" class="col-md-4 col-form-label form-control-label text-right">Endereço </label>
+                    <div class="col-md-3">
+                        <input type="text" name="zipcode" class="form-control" value="{{$config->zipcode}}">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="example-search-input" class="col-md-4 col-form-label form-control-label text-right">Bairro </label>
+                    <div class="col-md-3">
+                        <input type="text" name="zipcode" class="form-control" value="{{$config->zipcode}}">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="example-search-input" class="col-md-4 col-form-label form-control-label text-right">Cidade </label>
+                    <div class="col-md-3">
+                        <input type="text" name="zipcode" class="form-control" value="{{$config->zipcode}}">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="example-search-input" class="col-md-4 col-form-label form-control-label text-right">Estado </label>
+                    <div class="col-md-3">
+                        <input type="text" name="zipcode" class="form-control" value="{{$config->zipcode}}">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="example-search-input" class="col-md-4 col-form-label form-control-label text-right">Telefone </label>
+                    <div class="col-md-3">
+                        <input type="text" name="zipcode" class="form-control" value="{{$config->zipcode}}">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="example-search-input" class="col-md-4 col-form-label form-control-label text-right">WhatsApp </label>
+                    <div class="col-md-3">
+                        <input type="text" name="zipcode" class="form-control" value="{{$config->zipcode}}">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="example-search-input" class="col-md-4 col-form-label form-control-label text-right">Site </label>
+                    <div class="col-md-3">
+                        <input type="text" name="zipcode" class="form-control" value="{{$config->zipcode}}">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="example-search-input" class="col-md-4 col-form-label form-control-label text-right">Instagram </label>
+                    <div class="col-md-3">
+                        <input type="text" name="zipcode" class="form-control" value="{{$config->zipcode}}">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="example-search-input" class="col-md-4 col-form-label form-control-label text-right">Fan Page </label>
+                    <div class="col-md-3">
+                        <input type="text" name="zipcode" class="form-control" value="{{$config->zipcode}}">
+                    </div>
+                  </div>                  
 
-                <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Nome <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
-                            <div class="col-sm-6">
-                                <input type="text" name="nome" class="form-control" value="{{$config->nome}}">
-                            </div>
-                </div>               
+                  <button type="submit" class="btn btn-block btn-outline-success btn-lg btn-round"> <i class=" fa fa-check-square nav-icon"></i> Salvar</button>
               
-                <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">CEP <b class="text-danger" data-toggle="tooltip" data-placement="right" title="Campo obrigatório"> * </b></label>
-                            <div class="col-sm-2">
-                                <input type="text" name="cep" class="form-control" value="{{$config->cep}}">
-                            </div>
-                </div>
-                <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Endereço </label>
-                            <div class="col-sm-6">
-                                <input type="text" name="endereco" class="form-control" value="{{$config->endereco}}">
-                            </div>
-                </div>
-                <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Bairro </label>
-                            <div class="col-sm-4">
-                                <input type="text" name="bairro" class="form-control" value="{{$config->bairro}}">
-                            </div>
-                </div>
-                <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Número </label>
-                            <div class="col-sm-1">
-                                <input type="text" name="numero" class="form-control" value="{{$config->numero}}">
-                            </div>
-                </div>
-                <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Cidade </label>
-                            <div class="col-sm-4">
-                                <input type="text" name="cidade" class="form-control" value="{{$config->cidade}}">
-                            </div>
-                </div>
-                <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Estado </label>
-                            <div class="col-sm-1">
-                                <input type="text" name="estado" class="form-control"value="{{$config->estado}}">
-                            </div>
-                </div>
-                <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Telefone </label>
-                            <div class="col-sm-2">
-                                <input type="text" name="telefone" class="form-control" value="{{$config->telefone}}">
-                            </div>
-                </div>
-                <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right"> WhatsApp </label>
-                            <div class="col-sm-2">
-                                <input type="text" name="whatsapp" class="form-control" value="{{$config->whatsapp}}">
-                            </div>
-                </div>
-                <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Site </label>
-                            <div class="col-sm-4">
-                                <input type="text" name="site" class="form-control" value="{{$config->site}}">
-                            </div>
-                </div>
-                <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Fan Page </label>
-                            <div class="col-sm-4">
-                                <input type="text" name="fanpage" class="form-control" value="{{$config->fanpage}}">
-                            </div>
-                </div>
-                <div class="form-group row">
-                        <label for="" class="col-sm-3 col-form-label text-right">Instagram </label>
-                            <div class="col-sm-4">
-                                <input type="text" name="instagram" class="form-control" value="{{$config->instagram}}">
-                            </div>
-                </div>                      
-                <hr>                    
-                    <div class="form-group row">                     
-                            <div class="col-sm-4">                                
-                            </div>
-                            <div class="col-sm-4">
-                            <button type="submit" class="btn btn-block btn-outline-success btn-lg btn-round"> <i class=" fa fa-check-square nav-icon"></i> Salvar</button>
-                            </div>
-                            <div class="col-sm-4">                                
-                            </div>                            
-                </div>                    
-                </div>
+                  @include('tools.messages')             
+              
+                </form>
+              </div>
             </div>
-        </div>            
-    </div>
-</form>
-
+          </div>
+        </div>
+      
+      </div>
 @stop
+
+
+
+
+

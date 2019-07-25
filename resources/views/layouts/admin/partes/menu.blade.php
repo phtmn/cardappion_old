@@ -1,39 +1,50 @@
-
-<nav class="mt-2">
-    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-        <!-- Add icons to the links using the .nav-icon class
-             with font-awesome or any other icon font library -->
-        <li class="nav-item has-treeview menu-open">
-        <ul class="nav nav-treeview">
-                <li class="nav-item">
-                    <a href="{{route('config.createEdit')}}" class="nav-link">
-                        <i class=" fa fa-cog nav-icon"></i>
-                        <p> Perfil</p>
-                    </a>
-                </li>
-            </ul>
-           
-            <ul class="nav nav-treeview">
-                <li class="nav-item">
-                    <a href="{{route('products.index')}}" class="nav-link">
-                        <i class="text-home fa fa-star nav-icon"></i>
-                        <p>Itens</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="{{route('menus.index')}}" class="nav-link">
-                        <i class="text-home fa fa-book nav-icon"></i>
-                        <p>Menus</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="{{route('promotions.index')}}" class="nav-link">
-                        <i class=" fa fa-bullhorn nav-icon"></i>
-                        <p>Ofertas</p>
-                    </a>
-                </li>
-            </ul>
-        </li>
-    </ul>
+<nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+    <div class="scrollbar-inner">
+        <div class="sidenav-header d-flex align-items-center">
+            <a class="navbar-brand" href="../../pages/dashboards/dashboard.html">
+                <img src="../../assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
+            </a>
+            <div class="ml-auto">
+                <div class="sidenav-toggler d-none d-xl-block" data-action="sidenav-unpin" data-target="#sidenav-main">
+                    <div class="sidenav-toggler-inner">
+                        <i class="sidenav-toggler-line"></i>
+                        <i class="sidenav-toggler-line"></i>
+                        <i class="sidenav-toggler-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-inner">
+            <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('config.createEdit')}}">
+                            <i class="ni ni-archive-2 text-green"></i>
+                            <span class="nav-link-text">Perfil</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('products.index')}}">
+                            <i class="ni ni-chart-pie-35 text-info"></i>
+                            <span class="nav-link-text">Itens</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('menus.index')}}">
+                            <i class="ni ni-calendar-grid-58 text-red"></i>
+                            <span class="nav-link-text">Menus</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('promotions.index')}}">
+                            <i class="ni ni-calendar-grid-58 text-red"></i>
+                            <span class="nav-link-text">Ofertas</span>
+                        </a>
+                    </li>
+                </ul>
+                <hr class="my-3">
+                
+            </div>
+        </div>
+    </div>
 </nav>
-
