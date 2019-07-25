@@ -73,7 +73,7 @@
                                         title="Campo obrigatório"> * </b></label>
                                 <div class="col-md-3">
                                     <input type="text" name="docnumber" class="form-control"
-                                        value="{{$config->docnumber}}">
+                                        value="{{$config->docnumber}}" id="docnumber">
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -82,7 +82,7 @@
                                         class="text-danger" data-toggle="tooltip" data-placement="right"
                                         title="Campo obrigatório"> * </b></label>
                                 <div class="col-md-3">
-                                    <input type="text" name="zipcode" class="form-control" value="{{$config->zipcode}}">
+                                    <input type="text" name="zipcode" class="form-control" value="{{$config->zipcode}}" id="cep">
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -119,7 +119,7 @@
                                     class="col-md-4 col-form-label form-control-label text-right">Telefone </label>
                                 <div class="col-md-4">
                                     <input type="text" name="telephone" class="form-control"
-                                        value="{{$config->telephone}}">
+                                        value="{{$config->telephone}}" id="telephone">
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -165,4 +165,8 @@
         </div>
 
     </div>
-    @stop
+
+    
+
+
+@stop

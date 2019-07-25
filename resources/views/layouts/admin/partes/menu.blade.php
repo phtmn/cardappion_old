@@ -37,8 +37,8 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('promotions.index')}}">
-                            <i class="ni ni-calendar-grid-58 text-red"></i>
-                            <span class="nav-link-text">Ofertas</span>
+                            <i class="ni ni-notification-70 text-primary"></i>
+                            <span class="nav-link-text">Promoções</span>
                         </a>
                     </li>
                 </ul>

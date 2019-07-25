@@ -42,16 +42,18 @@
               <div class="dropdown-menu dropdown-menu-right">
                 <div class="dropdown-header noti-title">
                   <h6 class="text-overflow m-0">Olá,</h6>
-                </div>
-                <a href="#!" class="dropdown-item">
+                </div>               
+                <a href="#!" class="dropdown-item"  >
                   <i class="ni ni-circle-08"></i>
                   <span>{{ auth()->user()->name }}</span>
-                </a>
-                               
+                </a>             
+                       
                 <div class="dropdown-divider"></div>
-                <a href="#!" class="dropdown-item">
+                <a href="{{route('logout')}}" class="dropdown-item" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                   <i class="ni ni-button-power"></i>
                   <span>Sair</span>
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">    
+                  </form> 
                 </a>
               </div>
             </li>
