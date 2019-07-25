@@ -16,23 +16,20 @@ class CreateConfigsTable extends Migration
         Schema::create('configs', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('tenant_id');
-            $table->unsignedBigInteger('user_id');
-            
+            $table->unsignedBigInteger('user_id');            
             $table->string('name')->nullable();
             $table->string('docnumber')->nullable();            
             $table->string('zipcode')->nullable();
-            // $table->string('endereco')->nullable();
-            // $table->string('bairro')->nullable();
-            // $table->string('numero')->nullable();
-            // $table->string('cidade')->nullable();
-            // $table->string('estado')->nullable();
-            // $table->string('telefone')->nullable();
-            // $table->boolean('whatsapp')->default(0);
-            // $table->string('site')->nullable();
-            // $table->string('fanpage')->nullable();
-            // $table->string('instagram')->nullable();            
-
-            $table->foreign('tenant_id')->references('id')->on('tenants');
+            $table->string('address')->nullable();
+            $table->string('neighborhood')->nullable();
+            $table->string('city')->nullable();
+            $table->string('us')->nullable();
+            $table->string('telephone')->nullable();
+            $table->string('whatsapp')->nullable();
+            $table->string('site')->nullable();
+            $table->string('instagram')->nullable(); 
+            $table->string('fanpage')->nullable();  
+            $table->foreign('tenant_id')->references('id')->on('tenants');// apagar depois q retirar do login?
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });

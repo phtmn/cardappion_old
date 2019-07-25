@@ -19,8 +19,8 @@
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('config.createEdit')}}">
-                            <i class="ni ni-archive-2 text-green"></i>
-                            <span class="nav-link-text">Perfil</span>
+                            <i class="ni ni-settings text-info"></i>
+                            <span class="nav-link-text">Configurações</span>
                         </a>
                     </li>
                     <li class="nav-item">

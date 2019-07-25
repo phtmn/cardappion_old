@@ -29,17 +29,16 @@ class ConfigController extends Controller
             [
                 'name'          => $request->name,
                 'docnumber'     => $request->docnumber,
-                'zipcode'       => $request->zipcode,
-                // 'endereco'  => $request->endereco,
-                // 'bairro'    => $request->bairro,
-                // 'numero'    => $request->numero,
-                // 'cidade'    => $request->cidade,
-                // 'estado'    => $request->estado,
-                // 'telefone'  => $request->telefone,
-                // 'whatsapp'  => $request->whatsapp,
-                // 'site'      => $request->site,
-                // 'fanpage'   => $request->fanpage,
-                // 'instagram' => $request->instagram,                
+                'zipcode'       => $request->zipcode,                
+                'address'       => $request->address,
+                'neighborhood'  => $request->neighborhood,
+                'city'          => $request->city,
+                'us'            => $request->us,
+                'telephone'     => $request->telephone,
+                'whatsapp'      => $request->whatsapp,                
+                'site'          => $request->site,
+                'instagram'     => $request->instagram, 
+                'fanpage'       => $request->fanpage,                             
                 'user_id'   => auth()->user()->id
             ]
         );
