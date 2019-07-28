@@ -1,29 +1,43 @@
 @extends('layouts.admin.master')
 
 @section('cabecalho')
-    <div class="panel-header panel-header-sm">
-        <div class="content-header">
-            <div class="container-fluid">
-                <div class="row mb-2">
-                    <div class="col-sm-6">
-                        <a href="{{route('promotions.create')}}" class="btn btn-success"> <i class=" fa fa-plus nav-icon"></i> Oferta </a>
-                    </div><!-- /.col -->
-                    <div class="col-sm-6">
-                        <ol class="breadcrumb float-sm-right">
-                           
-                            <li class="breadcrumb-item active"><i class="text-primary fa fa-bullhorn nav-icon"></i> Ofertas</li>
-                        </ol>
-                    </div><!-- /.col -->
-                </div><!-- /.row -->
-            </div><!-- /.container-fluid -->
+
+<div class="header bg-dark pb-6">
+    <div class="container-fluid">
+        <div class="header-body">
+            <div class="row align-items-center py-4">
+                <div class="col-lg-6 col-7">
+                    <i class="ni ni-notification-70 text-white"></i>
+                    <h3 class="h3 text-white d-inline-block mb-0">Promoções</h3>
+                </div>
+                <div class="col-lg-6 col-5 text-right">
+                </div>
+            </div>
         </div>
     </div>
+</div>
+
 @stop
 
 @section('conteudo')
 
-<div class="card card-warning card-outline">
-    <div class="card-header">
+<div class="container-fluid mt--6">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card-wrapper">                
+                <div class="card">                
+                    <div class="card-header">
+                        <div class="row align-items-center">
+                            <div class="col-8">   
+                                <a href="{{route('promotions.create')}}" class="btn btn-success"> <i class=" fa fa-plus nav-icon"></i> Oferta </a>                                           
+                            </div>
+                            <div class="col-4 text-right">
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="card-body">
+                        <div class="text-center">
+                        <div class="card-header">
         <h4 class="card-title">Ofertas Cadastradas</h4>
     </div>
     <div class="card-body">
@@ -32,8 +46,7 @@
                <thead class="text-dark">
                     <th>#</th>
                     <th>Título </th>
-                    <th>Valor (R$)</th>
-                    <th class="text-danger">Validade</th>
+                    <th>Valor (R$)</th>                    
                     <th>Link</th>
                     <th>Ações</th>
                </thead>
@@ -42,8 +55,7 @@
                         <tr>
                             <td><img src="{{Storage::url($d->image)}}" style="height: 70px;" alt=""/></td>
                             <td>{{$d->title}}</td>
-                            <td>R$ {{  $d->promotion_value ?? 0 }}</td>
-                            <td>{{ date('d/m/Y',strtotime($d->expiration_date))}}</td>
+                            <td>R$ {{  $d->promotion_value ?? 0 }}</td>                            
                             <td><a href="{{ route('promo',$d->url)  }}" target="_blank">cardappon.com.br/promo/{{ $d->url }}</a></td>
                             <td>
                                 <a href="#" data-toogle="tooltip" title="Copiar link | implementar função com js" class="btn btn-primary btn-sm"><i class="fa fa-copy"></i></a>
@@ -57,9 +69,20 @@
            </table>
        </div>
     </div>
-</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    </div>
+
+
+
+
+
+<!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-md">
         <div class="modal-content">
             <div class="modal-header justify-content-center">
@@ -93,6 +116,6 @@
             </form>
         </div>
     </div>
-</div>
+</div> -->
 
 @stop

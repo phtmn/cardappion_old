@@ -27,7 +27,7 @@
 
     <ion-menu side="start" menu-id="first">
         <ion-header>
-            <ion-toolbar color="primary">
+            <ion-toolbar color="dark">
                 <ion-title>Categorias</ion-title>
             </ion-toolbar>
         </ion-header>
@@ -43,7 +43,7 @@
   </ion-menu>
 
     <div class="ion-page" main>
-        <ion-toolbar color="primary">
+        <ion-toolbar color="dark">
             <ion-title>{{ $menu->description ?? 'Cardapio'}}</ion-title>
             <ion-buttons slot="start">
                 <ion-button onclick="openFirst()">
@@ -142,8 +142,13 @@
         </ion-tab>
 
         <ion-tab-bar slot="bottom">
+            <ion-tab-button tab="parceiro">
+                <ion-label>Estabelecimento</ion-label>
+                <ion-icon name="business"></ion-icon>
+            </ion-tab-button>
+
             <ion-tab-button tab="cardapio">
-                <ion-label>Cardapio</ion-label>
+                <ion-label>Menu</ion-label>
                 <ion-icon name="paper"></ion-icon>
             </ion-tab-button>
 
@@ -152,10 +157,7 @@
                 <ion-icon name="gift"></ion-icon>
             </ion-tab-button>
 
-            <ion-tab-button tab="parceiro">
-                <ion-label>Estabelecimento</ion-label>
-                <ion-icon name="business"></ion-icon>
-            </ion-tab-button>
+            
 
         </ion-tab-bar>
         </ion-tabs>

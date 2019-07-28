@@ -5,13 +5,7 @@
                 <img src="../../assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
             </a>
             <div class="ml-auto">
-                <div class="sidenav-toggler d-none d-xl-block" data-action="sidenav-unpin" data-target="#sidenav-main">
-                    <div class="sidenav-toggler-inner">
-                        <i class="sidenav-toggler-line"></i>
-                        <i class="sidenav-toggler-line"></i>
-                        <i class="sidenav-toggler-line"></i>
-                    </div>
-                </div>
+                
             </div>
         </div>
         <div class="navbar-inner">
@@ -19,25 +13,25 @@
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('config.createEdit')}}">
-                            <i class="ni ni-settings text-info"></i>
+                            <i class="ni ni-settings-gear-65 text-danger"></i>
                             <span class="nav-link-text">Configurações</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('products.index')}}">
-                            <i class="ni ni-chart-pie-35 text-info"></i>
-                            <span class="nav-link-text">Itens</span>
+                            <i class="ni ni-bullet-list-67 text-danger"></i>
+                            <span class="nav-link-text">Produtos</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('menus.index')}}">
-                            <i class="ni ni-calendar-grid-58 text-red"></i>
+                            <i class="ni ni-collection text-danger"></i>
                             <span class="nav-link-text">Menus</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('promotions.index')}}">
-                            <i class="ni ni-notification-70 text-primary"></i>
+                            <i class="ni ni-notification-70 text-danger"></i>
                             <span class="nav-link-text">Promoções</span>
                         </a>
                     </li>

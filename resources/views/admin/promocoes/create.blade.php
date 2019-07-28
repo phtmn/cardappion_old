@@ -2,38 +2,42 @@
 
 @section('cabecalho')
 
-        <div class="content-header">
-            <div class="container-fluid">
-                <div class="row mb-2">
-                    <div class="col-sm-6">
-                        <a href="{{ route('promotions.index') }}" class="btn btn-outline-primary"><i class="fa fa-arrow-left"></i> Voltar</a>
-                    </div><!-- /.col -->
-                    <div class="col-sm-6">
-                        <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="{{route('promotions.index')}}">Voltar para Ofertas</a></li>
-                            <li class="breadcrumb-item active">Cadastrar Oferta</li>
-                        </ol>
-                    </div><!-- /.col -->
-                </div><!-- /.row -->
-            </div><!-- /.container-fluid -->
+<div class="header bg-dark pb-6">
+    <div class="container-fluid">
+        <div class="header-body">
+            <div class="row align-items-center py-4">
+                <div class="col-lg-6 col-7">
+                    <i class="ni ni-notification-70 text-white"></i>
+                    <h3 class="h3 text-white d-inline-block mb-0">Promoções - Add NOVA PROMOçÃo</h3>
+                    
+                </div>
+                <div class="col-lg-6 col-5 text-right">
+                </div>
+            </div>
         </div>
+    </div>
+</div>
+
+
+        
 
 @stop
 
 @section('conteudo')
     @include('tools.messages')
-
+    <div class="container-fluid mt--6">
     <div class="row">
-        <div class="col-md-8 form">
+    <div class="col-lg-12">
+    <div class="card-wrapper"> 
             <div class="card">
-                <form action="{{route('promotions.store')}}" method="POST" enctype="multipart/form-data">
-                    @csrf
+               
                     <div class="card-header">
                         <h4 class="card-title">Cadastrar Oferta</h4>
                     </div>
 
                     <div class="card-body">
-
+                    <form action="{{route('promotions.store')}}" method="POST" enctype="multipart/form-data">
+                    @csrf
                         <div class="img">
                             <label class="text-primary"> Foto de Destaque</label>
                             <input type="file" id="input-file-now" name="image" class="dropify img-thumbnail" />
@@ -80,6 +84,9 @@
             </div></div>
         <div class="col-md-4 preview"></div>
     </div>
+    </div>
+
+   
 
 
 @stop

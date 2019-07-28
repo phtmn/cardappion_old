@@ -148,7 +148,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="card ">
-                <div class="card-header text-danger"><b>Cadastre-se aqui</b></div>
+                <div class="card-header text-danger"><b>Cadastre-se aqui seu estabelecimento</b></div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">

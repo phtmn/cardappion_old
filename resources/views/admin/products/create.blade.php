@@ -2,34 +2,48 @@
 
 @section('cabecalho')
 
-        <div class="content-header">
-            <div class="container-fluid">
-                <div class="row mb-2">
-                    <div class="col-sm-6">
-                        <a href="{{ route('products.create') }}" class="btn btn-outline-primary"> Novo Produto +</a>
-                    </div><!-- /.col -->
-                    <div class="col-sm-6">
-                        <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="{{route('products.index')}}">Voltar para Produtos</a></li>
-                            <li class="breadcrumb-item active">Cadastrar Produto</li>
-                        </ol>
-                    </div><!-- /.col -->
-                </div><!-- /.row -->
-            </div><!-- /.container-fluid -->
+<div class="header bg-dark pb-6">
+    <div class="container-fluid">
+        <div class="header-body">
+            <div class="row align-items-center py-4">
+                <div class="col-lg-6 col-7">
+                    <i class="ni ni-bullet-list-67 text-white"></i>
+                    <h3 class="h3 text-white d-inline-block mb-0">Produtos - Add NOVO PRODUTO</h3>
+                    
+                </div>
+                <div class="col-lg-6 col-5 text-right">
+                </div>
+            </div>
         </div>
+    </div>
+</div>
+
 
 @stop
 
 @section('conteudo')
-    @include('tools.messages')
-    <div class="card">
-        <form action="{{route('products.store')}}" method="POST" enctype="multipart/form-data">
-            @csrf
-            <div class="card-header">
-                <h4 class="card-title">Novo Item</h4>
-            </div>
+  
 
-            <div class="card-body">
+    <div class="container-fluid mt--6">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card-wrapper">                
+                <div class="card"> 
+                          
+                    <div class="card-header">
+                        <div class="row align-items-center">
+                            <div class="col-8">   
+                                <h2> Novo Produto </h2>                                           
+                            </div>
+                            <div class="col-4 text-right">
+                            </div>
+                        </div>
+                    </div>                    
+                    
+                    <form action="{{route('products.store')}}" method="POST" enctype="multipart/form-data">
+            @csrf   
+       
+    <div class="card-body">
                 <div class="form-group">
                     <label for="" class="text-primary">Descrição</label>
                     <input type="text" name="description" class="form-control">
@@ -74,7 +88,23 @@
                 <button type="submit" class="btn btn-round">Salvar</button>
             </div>
         </form>
+        @include('tools.messages')
+
+
     </div>
+                        </div>
+                    </div>
+                </div>
+          
+       
+      
+
+   
+
+
+
+   
+    
 
 @stop
 
