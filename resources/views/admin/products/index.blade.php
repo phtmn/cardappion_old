@@ -44,24 +44,28 @@
     <div class="card-body">
        <div class="table-responsive">
            <table class="table">
-               <thead class="text-dark">
-                        <th>Codigo</th>
-                        <th>Nome</th>
-                        <th>Categoria</th>
-                        <th>Preço</th>
-                        <th>Imagem</th>
+               <thead class="text-dark">                        
+                        <th>#</th>
+                        <th>Produto</th>
+                        <th>Valor (R$)</th>
+                        <th>Disponibilidade</th>
                         <th></th>
                </thead>
                <tbody>
                     @forelse($data as $d)
                         <tr>
-                        <td>{{$d->id}}</td>
+                        <td><img src="{{Storage::url($d->image)}}" style="height: 70px;" alt=""/></td>
                             <td>{{$d->description}}</td>
-                            <td>{{ $d->category->name }}</td>
                             <td>{{ $d->price}}</td>
-                            <td><img src="{{Storage::url($d->image)}}" style="height: 70px;" alt=""/></td>
+                            <td>
+                            <label class="custom-toggle">
+                    <input type="checkbox">
+                    <span class="custom-toggle-slider rounded-circle"></span>
+                  </label>
+                            </td>
                             <td>
                                 <a href="" data-toogle="toltip" title="Editar produto" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
+                                <a href="" data-toogle="toltip" title="Apagar produto" class="btn btn-sm btn-primary"><i class="fa fa-trash"></i></a>                                
                             </td> 
                             
                         </tr>

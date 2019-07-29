@@ -38,28 +38,36 @@
                     <div class="card-body">
                         <div class="text-center">
                         <div class="card-header">
-        <h4 class="card-title">Ofertas Cadastradas</h4>
+        <h4 class="card-title">Ofertas Cadastradas ( {{$data->count()}} )</h4>
     </div>
     <div class="card-body">
        <div class="table-responsive">
            <table class="table">
                <thead class="text-dark">
                     <th>#</th>
-                    <th>Título </th>
-                    <th>Valor (R$)</th>                    
-                    <th>Link</th>
-                    <th>Ações</th>
+                    <th>Promoção </th>
+                    <th>Valor (R$)</th>                                        
+                    <th>Disponibilidade</th>
+                    <th></th>
                </thead>
                <tbody>
                     @forelse($data as $d)
                         <tr>
                             <td><img src="{{Storage::url($d->image)}}" style="height: 70px;" alt=""/></td>
                             <td>{{$d->title}}</td>
-                            <td>R$ {{  $d->promotion_value ?? 0 }}</td>                            
-                            <td><a href="{{ route('promo',$d->url)  }}" target="_blank">cardappon.com.br/promo/{{ $d->url }}</a></td>
+                            <td>R$ {{  $d->promotion_value ?? 0 }}</td> 
                             <td>
-                                <a href="#" data-toogle="tooltip" title="Copiar link | implementar função com js" class="btn btn-primary btn-sm"><i class="fa fa-copy"></i></a>
-                                <a href="{{route('promotion.qrCode',$d->id)}}" class="btn btn-success btn-sm"><i class="fa fa-qrcode"></i></a>
+                            <label class="custom-toggle">
+                    <input type="checkbox">
+                    <span class="custom-toggle-slider rounded-circle"></span>
+                  </label>
+                            </td>
+                            <!-- <td><a href="{{ route('promo',$d->url)  }}" target="_blank">cardappon.com.br/promo/{{ $d->url }}</a></td> -->
+                            <td>
+                            <a href="" data-toogle="toltip" title="Editar promoção" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
+                                <a href="" data-toogle="toltip" title="Apagar promoção" class="btn btn-sm btn-primary"><i class="fa fa-trash"></i></a>                                
+                               
+                            <!-- <a href="{{route('promotion.qrCode',$d->id)}}" class="btn btn-success btn-sm"><i class="fa fa-qrcode"></i></a> -->
                             </td>
                         </tr>
                     @empty

@@ -112,38 +112,23 @@
                     <ion-item>
                         <ion-label>Pac-Man</ion-label>
                     </ion-item>
-                    <ion-item>
-                        <ion-label>Super Mario World</ion-label>
-                    </ion-item>
-                    <ion-item>
-                        <ion-label>Pokémon Yellow</ion-label>
-                    </ion-item>
-                    <ion-item>
-                        <ion-label>Mega Man X</ion-label>
-                    </ion-item>
-                    <ion-item>
-                        <ion-label>The Legend of Zelda</ion-label>
-                    </ion-item>
-                    <ion-item>
-                        <ion-label>Pac-Man</ion-label>
-                    </ion-item>
-                    <ion-item>
-                        <ion-label>Super Mario World</ion-label>
-                    </ion-item>
+                   
                 </ion-list>
     </ion-content>
         </ion-tab>
 
         <ion-tab tab="parceiro">
             <ion-item style="margin-top:50px">
-                <ion-label>Dados do Parceiro</ion-label>
+                <ion-label>teste do Parceiro</ion-label>
+
+                
             </ion-item>
 
         </ion-tab>
 
         <ion-tab-bar slot="bottom">
             <ion-tab-button tab="parceiro">
-                <ion-label>Estabelecimento</ion-label>
+                <ion-label>Sobre</ion-label>
                 <ion-icon name="business"></ion-icon>
             </ion-tab-button>
 
