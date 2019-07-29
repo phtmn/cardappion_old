@@ -66,28 +66,14 @@
                             </ion-thumbnail>
                             <ion-label>{{$item->description}} - {{$item->price}}</ion-label>
                         </ion-item>
-                        <ion-item href="{{route('product.detail',$item->id)}}">
-                            <ion-thumbnail slot="start">
-                                <img src="{{Storage::url($item->image)}}" alt="">
-                            </ion-thumbnail>
-                            <ion-label>{{$item->description}} - {{$item->price}}</ion-label>
-                        </ion-item>
-                        <ion-item href="{{route('product.detail',$item->id)}}">
-                            <ion-thumbnail slot="start">
-                                <img src="{{Storage::url($item->image)}}" alt="">
-                            </ion-thumbnail>
-                            <ion-label>{{$item->description}} - {{$item->price}}</ion-label>
-                        </ion-item>
-                        <ion-item href="{{route('product.detail',$item->id)}}">
-                            <ion-thumbnail slot="start">
-                                <img src="{{Storage::url($item->image)}}" alt="">
-                            </ion-thumbnail>
-                            <ion-label>{{$item->description}} - {{$item->price}}</ion-label>
-                        </ion-item>
+                        
                     @empty
                         <p>Nada a exibir</p>
                     @endforelse
                 </ion-list>
+
+
+                
 
     </ion-conent>
             </ion-tab>

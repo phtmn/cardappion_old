@@ -29,7 +29,8 @@
                     <div class="card-header">
                         <div class="row align-items-center">
                             <div class="col-8">                
-                                <a href="#!" class="btn btn-sm btn-neutral" data-toggle="tooltip" data-placement="bottom" title="Em breve!">Upload Logo</a>
+                                <a href="#!" class="btn btn-success" data-toggle="tooltip" data-placement="bottom" title="Em breve!"><i
+                                    class=" ni ni-cloud-upload-96"></i> Upload Logo</a>
                             </div>
                             <div class="col-4 text-right">
                             </div>
@@ -59,37 +60,37 @@
                             @csrf
                             <div class="form-group row">
                                 <label for="example-text-input"
-                                    class="col-md-4 col-form-label form-control-label text-right">Nome <b
+                                    class="col-md-4 col-form-label form-control-label text-right text-danger">Nome <b
                                         class="text-danger" data-toggle="tooltip" data-placement="right"
                                         title="Campo obrigatório"> * </b></label>
                                 <div class="col-md-8">
                                     <input type="text" name="name" class="form-control" value="">
                                 </div>
                             </div>
-                            <div class="form-group row">
+                            <!-- <div class="form-group row">
                                 <label for="example-search-input"
                                     class="col-md-4 col-form-label form-control-label text-right">Nº do Documento <b
                                         class="text-danger" data-toggle="tooltip" data-placement="right"
                                         title="Campo obrigatório"> * </b></label>
-                                <div class="col-md-3">
+                                <div class="col-md-4">
                                     <input type="text" name="docnumber" class="form-control"
-                                        value="">
+                                        value="" id="docnumber">
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="form-group row">
                                 <label for="example-search-input"
-                                    class="col-md-4 col-form-label form-control-label text-right">CEP <b
+                                    class="col-md-4 col-form-label form-control-label text-right text-danger">CEP <b
                                         class="text-danger" data-toggle="tooltip" data-placement="right"
                                         title="Campo obrigatório"> * </b></label>
                                 <div class="col-md-3">
-                                    <input type="text" name="zipcode" class="form-control" value="">
+                                    <input type="text" name="zipcode" class="form-control" value="" id="cep" maxlength="8">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="example-search-input"
                                     class="col-md-4 col-form-label form-control-label text-right">Endereço </label>
-                                <div class="col-md-3">
-                                    <input type="text" name="address" class="form-control" value="">
+                                <div class="col-md-6">
+                                    <input type="text" name="address" class="form-control" value="" id="address">
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -97,21 +98,21 @@
                                     class="col-md-4 col-form-label form-control-label text-right">Bairro </label>
                                 <div class="col-md-4">
                                     <input type="text" name="neighborhood" class="form-control"
-                                        value="">
+                                        value="" id="neighborhood">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="example-search-input"
                                     class="col-md-4 col-form-label form-control-label text-right">Cidade </label>
                                 <div class="col-md-6">
-                                    <input type="text" name="city" class="form-control" value="">
+                                    <input type="text" name="city" class="form-control" value="" id="city">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="example-search-input"
                                     class="col-md-4 col-form-label form-control-label text-right">Estado </label>
                                 <div class="col-md-2">
-                                    <input type="text" name="us" class="form-control" value="">
+                                    <input type="text" name="us" class="form-control" value="" id="us">
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -119,7 +120,7 @@
                                     class="col-md-4 col-form-label form-control-label text-right">Telefone </label>
                                 <div class="col-md-4">
                                     <input type="text" name="telephone" class="form-control"
-                                        value="">
+                                        value="" id="telephone">
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -127,7 +128,7 @@
                                     class="col-md-4 col-form-label form-control-label text-right">WhatsApp </label>
                                 <div class="col-md-4">
                                     <input type="text" name="whatsapp" class="form-control"
-                                        value="">
+                                        value="" id="whatsapp">
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -142,7 +143,7 @@
                                     class="col-md-4 col-form-label form-control-label text-right">Instagram </label>
                                 <div class="col-md-7">
                                     <input type="text" name="instagram" class="form-control"
-                                        value="">
+                                        value="" >
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -153,8 +154,24 @@
                                 </div>
                             </div>
 
-                            <button type="submit" class="btn btn-block btn-outline-success btn-lg btn-round"> <i
+
+                            <div class="form-group row">
+                                <div class="col-md-4">
+                                    
+                                </div>
+                                <div class="col-md-4">
+                                <button type="submit" class="btn btn-block btn-outline-success btn-lg btn-round"> <i
                                     class=" fa fa-check-square nav-icon"></i> Salvar</button>
+                                </div>
+                                <div class="col-md-4">
+                                    
+                                </div>
+                            
+                            </div>
+
+
+
+                            
 
                             @include('tools.messages')
 
